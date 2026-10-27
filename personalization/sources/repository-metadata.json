@@ -1,0 +1,57 @@
+[
+  {
+    "source": "https://api.github.com/repos/omkark2404/finops-copilot",
+    "retrievedDate": "2026-10-27 Asia/Kolkata",
+    "full_name": "omkark2404/finops-copilot",
+    "html_url": "https://github.com/omkark2404/finops-copilot",
+    "description": "AI-powered FinOps copilot for cloud cost optimization — deterministic analytics + multi-agent reasoning, zero hallucinated numbers.",
+    "homepage": "https://finops-copilot-eta.vercel.app",
+    "stars": 0,
+    "forks": 0,
+    "license": "NOASSERTION"
+  },
+  {
+    "source": "https://api.github.com/repos/omkark2404/Pathfinder--AI-Powered-Last-Mile-Delivery-Decision-Intelligence",
+    "retrievedDate": "2026-10-27 Asia/Kolkata",
+    "full_name": "omkark2404/Pathfinder--AI-Powered-Last-Mile-Delivery-Decision-Intelligence",
+    "html_url": "https://github.com/omkark2404/Pathfinder--AI-Powered-Last-Mile-Delivery-Decision-Intelligence",
+    "description": "Pathfinder – AI-powered last-mile delivery intelligence platform for predicting delivery risks, detecting route deviations, and optimizing delivery routes. Combines machine learning, risk scoring, OR-Tools optimization, scenario simulation, and decision intelligence to support smarter dispatch decisions.",
+    "homepage": "https://pathfinder-ai-powered-last-mile-del.vercel.app",
+    "stars": 0,
+    "forks": 0,
+    "license": "MIT"
+  },
+  {
+    "source": "https://api.github.com/repos/omkark2404/FraudLens-AI",
+    "retrievedDate": "2026-10-27 Asia/Kolkata",
+    "full_name": "omkark2404/FraudLens-AI",
+    "html_url": "https://github.com/omkark2404/FraudLens-AI",
+    "description": null,
+    "homepage": "https://fraudlens-ai-6wu4.onrender.com",
+    "stars": 0,
+    "forks": 0,
+    "license": "MISSING"
+  },
+  {
+    "source": "https://api.github.com/repos/omkark2404/CodeFusion",
+    "retrievedDate": "2026-10-27 Asia/Kolkata",
+    "full_name": "omkark2404/CodeFusion",
+    "html_url": "https://github.com/omkark2404/CodeFusion",
+    "description": "A real-time collaborative coding platform designed for seamless pair programming. It allows multiple developers to write, edit, and execute code together instantly, complete with built-in voice and text chat to keep the team in sync without needing external tools.",
+    "homepage": null,
+    "stars": 0,
+    "forks": 0,
+    "license": "MIT"
+  },
+  {
+    "source": "https://api.github.com/repos/omkark2404/Ecommerce_funnel-analytics",
+    "retrievedDate": "2026-10-27 Asia/Kolkata",
+    "full_name": "omkark2404/Ecommerce_funnel-analytics",
+    "html_url": "https://github.com/omkark2404/Ecommerce_funnel-analytics",
+    "description": "A data-driven analysis of an e-commerce customer journey from initial sign-up to final checkout. Tracks user behavior to pinpoint friction points where potential buyers abandon their carts. Provides actionable insights on demographics and conversion times to improve the shopping experience and boost sales.",
+    "homepage": null,
+    "stars": 0,
+    "forks": 0,
+    "license": "MIT"
+  }
+]

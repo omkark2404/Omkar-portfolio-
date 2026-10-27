@@ -1,0 +1,157 @@
+{
+  "mode": "Local test mirrors for blocked runtime CDNs; application source unchanged",
+  "checks": [
+    {
+      "check": "Desktop identity",
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "check": "3D canvases mounted",
+      "result": "PASS",
+      "notes": "Hero, stars, Earth and desktop Spline use unchanged source; software rendering"
+    },
+    {
+      "check": "Navigation menu opens",
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "check": "About navigation",
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "check": "Desktop images",
+      "result": "PASS",
+      "notes": "[]"
+    },
+    {
+      "check": "Mobile identity",
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "check": "Mobile horizontal overflow",
+      "result": "PASS",
+      "notes": "{\"viewport\":390,\"body\":390}"
+    },
+    {
+      "check": "Mobile project modal",
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "check": "No uncaught page errors",
+      "result": "PASS",
+      "notes": "[]"
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    }
+  ]
+}

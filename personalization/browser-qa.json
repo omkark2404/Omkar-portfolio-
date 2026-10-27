@@ -1,0 +1,57 @@
+{
+  "mode": "Local test mirrors for blocked runtime CDNs; application source unchanged",
+  "checks": [
+    {
+      "check": "Desktop identity",
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "check": "3D canvases mounted",
+      "result": "PASS",
+      "notes": "Hero, stars, Earth and desktop Spline use unchanged source; software rendering"
+    },
+    {
+      "check": "Project modal opens",
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "check": "Screenshot gallery",
+      "result": "PASS",
+      "notes": "Actual synthetic FinOps dashboard is second image"
+    },
+    {
+      "check": "GitHub target",
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "check": "LinkedIn target",
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "check": "Missing-email guard",
+      "result": "PASS",
+      "notes": "No email or external message sent"
+    },
+    {
+      "check": "Draft resume opens",
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "check": "Resume print styles",
+      "result": "PASS",
+      "notes": "Headless print-to-PDF test only; not a final resume PDF"
+    },
+    {
+      "check": "Navigation menu opens",
+      "result": "PASS",
+      "notes": ""
+    }
+  ],
+  "errors": [],
+  "requests": []
+}

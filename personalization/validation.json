@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-26T20:57:45.373Z",
+  "checks": [
+    {
+      "check": "Protected-file hashes",
+      "result": "PASS",
+      "notes": "127 original files unchanged, including all model/licence/configuration files"
+    },
+    {
+      "check": "Active owner-data residual scan",
+      "result": "PASS",
+      "notes": "53 active text files; attribution remains in LICENSE, README and historical snapshots"
+    },
+    {
+      "check": "Project content and static paths",
+      "result": "PASS",
+      "notes": "Five repository links, seven project images, explicit MISSING views, no unverified live-demo buttons"
+    },
+    {
+      "check": "LinkedIn, resume and missing-email guard",
+      "result": "PASS",
+      "notes": "Static checks only; EmailJS delivery and external LinkedIn identity not exercised"
+    },
+    {
+      "check": "JSX hierarchy and styling attributes",
+      "result": "PASS",
+      "notes": "Opening-element sequence and all styling/motion attribute expressions match original templates"
+    },
+    {
+      "check": "Idempotent dry run",
+      "result": "PASS",
+      "notes": "DRY RUN: 0 changes; 65 files checked; 127 protected files unchanged."
+    },
+    {
+      "check": "Fail-closed drift and path rejection",
+      "result": "PASS",
+      "notes": "Protected-file drift, content drift and asset path traversal all rejected; active project untouched"
+    },
+    {
+      "check": "git diff --check",
+      "result": "PASS",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "mode": "Local test mirrors for blocked runtime CDNs; application source unchanged",
+  "checks": [
+    {
+      "check": "Desktop identity",
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "check": "3D canvases mounted",
+      "result": "PASS",
+      "notes": "Hero, stars, Earth and desktop Spline use unchanged source; software rendering"
+    },
+    {
+      "check": "Mobile identity",
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "check": "Mobile horizontal overflow",
+      "result": "PASS",
+      "notes": "{\"viewport\":390,\"body\":390}"
+    },
+    {
+      "check": "No uncaught page errors",
+      "result": "PASS",
+      "notes": "[]"
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "url": "https://randomuser.me/api/portraits/women/4.jpg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://randomuser.me/api/portraits/men/5.jpg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://randomuser.me/api/portraits/women/6.jpg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://randomuser.me/api/portraits/women/4.jpg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://randomuser.me/api/portraits/men/5.jpg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "url": "https://randomuser.me/api/portraits/women/6.jpg",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    }
+  ]
+}

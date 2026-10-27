@@ -1,0 +1,786 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "name": "Omkar Kumar",
+    "headline": "Aspiring Business Analyst | Applied AI/ML & Data Analytics",
+    "typedRoles": [
+      "an aspiring Business Analyst",
+      "an aspiring AI/ML Engineer"
+    ],
+    "tagline": "Exploring business problems through data and applied AI.",
+    "shortBio": "B.E. Electronics Engineering (VLSI), Thapar Institute of Engineering & Technology, Class of 2027. Interested in business analysis and applied AI/ML.",
+    "longBio": "I'm Omkar Kumar, a B.E. Electronics Engineering (VLSI) student at Thapar Institute of Engineering & Technology, Class of 2027. I am pursuing Business Analyst and AI/ML Engineer opportunities, with an interest in using Python, SQL and applied AI to understand business problems. My portfolio explores cloud-cost analysis, delivery decisions, document processing and ecommerce funnels.",
+    "location": "MISSING"
+  },
+  "education": {
+    "institution": "Thapar Institute of Engineering & Technology",
+    "degree": "B.E. Electronics Engineering (VLSI)",
+    "startYear": 2023,
+    "graduationYear": 2027,
+    "gpa": "MISSING"
+  },
+  "experience": "MISSING",
+  "social": {
+    "github": "https://github.com/omkark2404",
+    "linkedin": "https://www.linkedin.com/in/omkarkr/",
+    "email": "MISSING",
+    "website": "MISSING",
+    "other": "MISSING"
+  },
+  "resume": {
+    "uploadedPdf": "MISSING",
+    "publicTarget": "MISSING",
+    "draftHtmlTarget": "/resume/omkar-kumar-resume.html"
+  },
+  "branding": {
+    "logo": "personalization/assets/logo.svg",
+    "favicon": "personalization/assets/logo.svg",
+    "openGraphImage": "NO_SPECIFIC_CONSTRAINT"
+  },
+  "skills": {
+    "js": {
+      "status": "VERIFIED",
+      "evidence": "CodeFusion (JavaScript application stack)"
+    },
+    "ts": {
+      "status": "VERIFIED",
+      "evidence": "Pathfinder frontend TypeScript client"
+    },
+    "html": {
+      "status": "MISSING",
+      "evidence": "MISSING"
+    },
+    "css": {
+      "status": "MISSING",
+      "evidence": "MISSING"
+    },
+    "react": {
+      "status": "VERIFIED",
+      "evidence": "CodeFusion frontend"
+    },
+    "nextjs": {
+      "status": "VERIFIED",
+      "evidence": "FinOps and Pathfinder frontend"
+    },
+    "tailwind": {
+      "status": "MISSING",
+      "evidence": "MISSING"
+    },
+    "nodejs": {
+      "status": "VERIFIED",
+      "evidence": "CodeFusion server"
+    },
+    "express": {
+      "status": "VERIFIED",
+      "evidence": "CodeFusion server"
+    },
+    "python": {
+      "status": "VERIFIED",
+      "evidence": "FinOps, Pathfinder, FraudLens and Ecommerce repositories"
+    },
+    "flask": {
+      "status": "VERIFIED",
+      "evidence": "FraudLens backend"
+    },
+    "java": {
+      "status": "MISSING",
+      "evidence": "MISSING"
+    },
+    "spring": {
+      "status": "MISSING",
+      "evidence": "MISSING"
+    },
+    "springboot": {
+      "status": "MISSING",
+      "evidence": "MISSING"
+    },
+    "rust": {
+      "status": "MISSING",
+      "evidence": "MISSING"
+    },
+    "postgres": {
+      "status": "VERIFIED",
+      "evidence": "FinOps PostgreSQL deployment"
+    },
+    "mysql": {
+      "status": "VERIFIED",
+      "evidence": "Ecommerce MySQL analysis"
+    },
+    "sqlite": {
+      "status": "VERIFIED",
+      "evidence": "FraudLens and FinOps local storage"
+    },
+    "mongodb": {
+      "status": "MISSING",
+      "evidence": "MISSING"
+    },
+    "redis": {
+      "status": "MISSING",
+      "evidence": "MISSING"
+    },
+    "restapi": {
+      "status": "VERIFIED",
+      "evidence": "FraudLens and Pathfinder APIs"
+    },
+    "websocket": {
+      "status": "VERIFIED",
+      "evidence": "CodeFusion Socket.IO"
+    },
+    "git": {
+      "status": "VERIFIED",
+      "evidence": "Repository workflows documented in project READMEs"
+    },
+    "github": {
+      "status": "VERIFIED",
+      "evidence": "Supplied GitHub account and repositories"
+    },
+    "npm": {
+      "status": "VERIFIED",
+      "evidence": "CodeFusion/FinOps setup"
+    },
+    "linux": {
+      "status": "MISSING",
+      "evidence": "MISSING"
+    },
+    "docker": {
+      "status": "VERIFIED",
+      "evidence": "FinOps, Pathfinder and CodeFusion setup"
+    },
+    "nginx": {
+      "status": "MISSING",
+      "evidence": "MISSING"
+    },
+    "aws": {
+      "status": "MISSING",
+      "evidence": "MISSING"
+    },
+    "vercel": {
+      "status": "MISSING",
+      "evidence": "MISSING"
+    }
+  },
+  "projects": [
+    {
+      "name": "FinOps Copilot",
+      "slug": "finops",
+      "repo": "finops-copilot",
+      "description": "A cloud-billing analysis prototype for FOCUS-formatted CSV and Parquet exports. It combines spend exploration, statistical forecasts, anomaly flags and human review, with optional Gemini explanations of numeric evidence. Predictive quality and realised savings are not established.",
+      "tech": [
+        "Python",
+        "FastAPI",
+        "Next.js",
+        "SQL",
+        "LightGBM"
+      ],
+      "features": [
+        "Validate billing exports and retain dataset provenance.",
+        "Explore spend and statistical anomaly flags.",
+        "Compare forecasting candidates with simple baselines.",
+        "Review recommendations without changing cloud infrastructure."
+      ],
+      "screenshot": "finops-dashboard.png",
+      "source_code_link": "https://github.com/omkark2404/finops-copilot",
+      "live_demo_link": "MISSING",
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "views": "MISSING"
+      },
+      "image": "/assets/projects/finops-cover.svg",
+      "images": [
+        "/assets/projects/finops-cover.svg",
+        "/assets/projects/finops-dashboard.png"
+      ],
+      "tags": [
+        {
+          "name": "Python",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "FastAPI",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "Next.js",
+          "color": "pink-text-gradient"
+        },
+        {
+          "name": "SQL",
+          "color": "violet-text-gradient"
+        },
+        {
+          "name": "LightGBM",
+          "color": "orange-text-gradient"
+        }
+      ],
+      "source": "https://github.com/omkark2404/finops-copilot/blob/main/README.md",
+      "metricsRetrievedDate": "2026-10-27 Asia/Kolkata"
+    },
+    {
+      "name": "Pathfinder",
+      "slug": "pathfinder",
+      "repo": "Pathfinder--AI-Powered-Last-Mile-Delivery-Decision-Intelligence",
+      "description": "A last-mile delivery decision prototype combining route analytics, risk scoring, OR-Tools optimisation and what-if scenarios. Default predictive evaluation uses synthetic demonstration samples and does not establish real-world accuracy or operational impact.",
+      "tech": [
+        "Python",
+        "FastAPI",
+        "Next.js",
+        "scikit-learn",
+        "OR-Tools"
+      ],
+      "features": [
+        "Explore route-level delivery risk and deviations.",
+        "Optimise stop sequences with Google OR-Tools.",
+        "Compare resequencing and multi-vehicle scenarios.",
+        "Keep dispatch decisions under human review."
+      ],
+      "source_code_link": "https://github.com/omkark2404/Pathfinder--AI-Powered-Last-Mile-Delivery-Decision-Intelligence",
+      "live_demo_link": "MISSING",
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "views": "MISSING"
+      },
+      "image": "/assets/projects/pathfinder-cover.svg",
+      "images": [
+        "/assets/projects/pathfinder-cover.svg"
+      ],
+      "tags": [
+        {
+          "name": "Python",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "FastAPI",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "Next.js",
+          "color": "pink-text-gradient"
+        },
+        {
+          "name": "scikit-learn",
+          "color": "violet-text-gradient"
+        },
+        {
+          "name": "OR-Tools",
+          "color": "orange-text-gradient"
+        }
+      ],
+      "source": "https://github.com/omkark2404/Pathfinder--AI-Powered-Last-Mile-Delivery-Decision-Intelligence/blob/main/README.md",
+      "metricsRetrievedDate": "2026-10-27 Asia/Kolkata"
+    },
+    {
+      "name": "FraudLens-AI",
+      "slug": "fraudlens",
+      "repo": "FraudLens-AI",
+      "description": "A document-processing prototype using PaddleOCR, image preprocessing and rule-based validation to extract fields and flag quality issues or possible anomalies. Heuristic flags support review; they do not establish that a document is fraudulent.",
+      "tech": [
+        "Python",
+        "Flask",
+        "PaddleOCR",
+        "OpenCV",
+        "SQLite"
+      ],
+      "features": [
+        "Extract fields from document images and PDFs.",
+        "Preprocess images before OCR.",
+        "Separate poor-image quality from heuristic anomalies.",
+        "Process uploads with bounded background threads."
+      ],
+      "source_code_link": "https://github.com/omkark2404/FraudLens-AI",
+      "live_demo_link": "MISSING",
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "views": "MISSING"
+      },
+      "image": "/assets/projects/fraudlens-cover.svg",
+      "images": [
+        "/assets/projects/fraudlens-cover.svg"
+      ],
+      "tags": [
+        {
+          "name": "Python",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "Flask",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "PaddleOCR",
+          "color": "pink-text-gradient"
+        },
+        {
+          "name": "OpenCV",
+          "color": "violet-text-gradient"
+        },
+        {
+          "name": "SQLite",
+          "color": "orange-text-gradient"
+        }
+      ],
+      "source": "https://github.com/omkark2404/FraudLens-AI/blob/main/README.md",
+      "metricsRetrievedDate": "2026-10-27 Asia/Kolkata"
+    },
+    {
+      "name": "CodeFusion",
+      "slug": "codefusion",
+      "repo": "CodeFusion",
+      "description": "A collaborative coding platform with Monaco editing, Socket.IO synchronisation, WebRTC voice and text chat, and external code-execution providers. Current repository maintained under omkark2404; historical authorship is retained and individual contributions remain to be clarified.",
+      "tech": [
+        "React",
+        "Node.js",
+        "Monaco",
+        "Socket.IO",
+        "WebRTC"
+      ],
+      "features": [
+        "Share code and cursor updates in a browser room.",
+        "Communicate using integrated voice and text chat.",
+        "Request execution through Judge0 and API fallbacks.",
+        "Current last-write-wins editing has concurrent-edit limitations."
+      ],
+      "source_code_link": "https://github.com/omkark2404/CodeFusion",
+      "live_demo_link": "MISSING",
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "views": "MISSING"
+      },
+      "image": "/assets/projects/codefusion-cover.svg",
+      "images": [
+        "/assets/projects/codefusion-cover.svg"
+      ],
+      "tags": [
+        {
+          "name": "React",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "Node.js",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "Monaco",
+          "color": "pink-text-gradient"
+        },
+        {
+          "name": "Socket.IO",
+          "color": "violet-text-gradient"
+        },
+        {
+          "name": "WebRTC",
+          "color": "orange-text-gradient"
+        }
+      ],
+      "source": "https://github.com/omkark2404/CodeFusion/blob/main/README.md",
+      "metricsRetrievedDate": "2026-10-27 Asia/Kolkata"
+    },
+    {
+      "name": "Ecommerce Funnel Analytics",
+      "slug": "ecommerce",
+      "repo": "Ecommerce_funnel-analytics",
+      "description": "An account-level ecommerce funnel analysis using MySQL and reproducible Python-built charts. It examines signup-to-purchase conversion, drop-off and purchase timing on an illustrative dataset; it does not establish results or causal improvements for a real store.",
+      "tech": [
+        "MySQL",
+        "Python",
+        "SQL",
+        "Pillow",
+        "GitHub Actions"
+      ],
+      "features": [
+        "Measure unique-user stage and cumulative conversion.",
+        "Identify observed funnel drop-off.",
+        "Compare cohorts with complete follow-up windows.",
+        "Regenerate CSV outputs and a static dashboard."
+      ],
+      "screenshot": "ecommerce-dashboard.png",
+      "source_code_link": "https://github.com/omkark2404/Ecommerce_funnel-analytics",
+      "live_demo_link": "MISSING",
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "views": "MISSING"
+      },
+      "image": "/assets/projects/ecommerce-cover.svg",
+      "images": [
+        "/assets/projects/ecommerce-cover.svg",
+        "/assets/projects/ecommerce-dashboard.png"
+      ],
+      "tags": [
+        {
+          "name": "MySQL",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "Python",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "SQL",
+          "color": "pink-text-gradient"
+        },
+        {
+          "name": "Pillow",
+          "color": "violet-text-gradient"
+        },
+        {
+          "name": "GitHub Actions",
+          "color": "orange-text-gradient"
+        }
+      ],
+      "source": "https://github.com/omkark2404/Ecommerce_funnel-analytics/blob/main/README.md",
+      "metricsRetrievedDate": "2026-10-27 Asia/Kolkata"
+    }
+  ],
+  "achievements": "MISSING",
+  "certifications": "MISSING",
+  "testimonials": "MISSING",
+  "seo": {
+    "title": "Omkar Kumar | Portfolio",
+    "description": "MISSING",
+    "canonicalUrl": "MISSING",
+    "openGraph": "NO_SPECIFIC_CONSTRAINT",
+    "twitter": "NO_SPECIFIC_CONSTRAINT"
+  },
+  "_sources": {
+    "identity": "User supplied in current conversation",
+    "education": "Prior user-provided background; not independently credential-verified",
+    "positioning": "User targets Business Analyst and AI/ML Engineer with equal importance",
+    "linkedin": "https://www.linkedin.com/in/omkarkr/ (supplied target; page retrieval unavailable)",
+    "github": "https://github.com/omkark2404",
+    "resume": "MISSING",
+    "projects": "personalization/sources/*.json; current README snapshots and repository metadata",
+    "skills": "Current README project usage only; no proficiency rating inferred"
+  },
+  "liveDemoCandidates": {
+    "finops": "https://finops-copilot-eta.vercel.app",
+    "pathfinder": "https://pathfinder-ai-powered-last-mile-del.vercel.app",
+    "fraudlens": "https://fraudlens-ai-6wu4.onrender.com",
+    "codefusion": "https://codesync-clients.onrender.com",
+    "ecommerce": "MISSING"
+  },
+  "deploymentStatus": "BLOCKED — missing personal facts, unverified live demos and unrestricted-network browser check",
+  "assetMappings": [
+    {
+      "source": "personalization/assets/finops-cover.svg",
+      "destination": "public/assets/projects/finops-cover.svg",
+      "sourceSha256": "83d6d8880d0ddd6f5852a816e6bbcc4cc511268abfcd75000ac21bdde151fb74",
+      "expectedOldSha256": null
+    },
+    {
+      "source": "personalization/assets/finops-dashboard.png",
+      "destination": "public/assets/projects/finops-dashboard.png",
+      "sourceSha256": "6684aa5fe8911a25af16422c3290b586c57c5b5fa53acc34a54000ad1f0a26bb",
+      "expectedOldSha256": null
+    },
+    {
+      "source": "personalization/assets/pathfinder-cover.svg",
+      "destination": "public/assets/projects/pathfinder-cover.svg",
+      "sourceSha256": "6160a4b9d1b52abb491fa8cfe0ce723bb895584ea92df4aac6c3228c5a73dac4",
+      "expectedOldSha256": null
+    },
+    {
+      "source": "personalization/assets/fraudlens-cover.svg",
+      "destination": "public/assets/projects/fraudlens-cover.svg",
+      "sourceSha256": "135c14975c8f611b5899a126a9880e5066967480a086f14216058b042b5ef5c2",
+      "expectedOldSha256": null
+    },
+    {
+      "source": "personalization/assets/codefusion-cover.svg",
+      "destination": "public/assets/projects/codefusion-cover.svg",
+      "sourceSha256": "20c819de4045c642d283ff29d3ab30d1fe65e124319ff480362b60bee8455c11",
+      "expectedOldSha256": null
+    },
+    {
+      "source": "personalization/assets/ecommerce-cover.svg",
+      "destination": "public/assets/projects/ecommerce-cover.svg",
+      "sourceSha256": "d41b3bb700580ef5b6a26b1ba161036a5a97bac97cf4813f1c7449240fddff07",
+      "expectedOldSha256": null
+    },
+    {
+      "source": "personalization/assets/ecommerce-dashboard.png",
+      "destination": "public/assets/projects/ecommerce-dashboard.png",
+      "sourceSha256": "5865a95f131b993b4522a55e5c7472007be08d30b0153e851195c1ef6e218280",
+      "expectedOldSha256": null
+    },
+    {
+      "source": "personalization/assets/avatar.svg",
+      "destination": "public/assets/personalization/avatar.svg",
+      "sourceSha256": "6de63a82248faa85896cfcbdacdc4da0d1affd805b4e0749747775a463ffdf7f",
+      "expectedOldSha256": null
+    },
+    {
+      "source": "personalization/assets/missing.svg",
+      "destination": "public/assets/personalization/missing.svg",
+      "sourceSha256": "4db1c38db222a2549318eee706c29834f1317255b7f81b2ce2f7d14cc7dd1099",
+      "expectedOldSha256": null
+    },
+    {
+      "source": "personalization/assets/logo.png",
+      "destination": "src/assets/j-logo.png",
+      "sourceSha256": "f0795852232ca148a76ba67d043f678b1b7af0e0c0c8604ff5e0b06d068c1f4c",
+      "expectedOldSha256": "e70299e24c15475c1eed071672b929f3dd794ae6514f544a21930f544baf9dd6"
+    },
+    {
+      "source": "personalization/assets/logo.png",
+      "destination": "src/assets/logo.png",
+      "sourceSha256": "f0795852232ca148a76ba67d043f678b1b7af0e0c0c8604ff5e0b06d068c1f4c",
+      "expectedOldSha256": "7dac53772f73156fc80445c4959321e340907810c6362d0b90360324c10280d1"
+    },
+    {
+      "source": "personalization/assets/logo.png",
+      "destination": "logo.png",
+      "sourceSha256": "f0795852232ca148a76ba67d043f678b1b7af0e0c0c8604ff5e0b06d068c1f4c",
+      "expectedOldSha256": "e70299e24c15475c1eed071672b929f3dd794ae6514f544a21930f544baf9dd6"
+    },
+    {
+      "source": "personalization/assets/logo.png",
+      "destination": "public/logo.png",
+      "sourceSha256": "f0795852232ca148a76ba67d043f678b1b7af0e0c0c8604ff5e0b06d068c1f4c",
+      "expectedOldSha256": "e70299e24c15475c1eed071672b929f3dd794ae6514f544a21930f544baf9dd6"
+    },
+    {
+      "source": "personalization/assets/pathfinder-cover.png",
+      "destination": "src/assets/project/Krypton.png",
+      "sourceSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "expectedOldSha256": "6be202e4ff40bc18cc25fc9fc97c975fb46b2082bd66d19f187a7bdb72c8e032"
+    },
+    {
+      "source": "personalization/assets/codefusion-cover.png",
+      "destination": "src/assets/project/astroPixel.png",
+      "sourceSha256": "83495cabeb311f9535a6e3cb8daab9166f2d44ca112b4d2cae5649996864e226",
+      "expectedOldSha256": "124399c89d5fe5eccdae86c82fbbce5c0b455fc85a8ea2880dc484bd64a78301"
+    },
+    {
+      "source": "personalization/assets/codefusion-cover.jpg",
+      "destination": "src/assets/project/astroPixel1.jpg",
+      "sourceSha256": "800c7d553561b26dd5b6e4d5f65e94ae3dd540574f66725f441b9529e3fd28fb",
+      "expectedOldSha256": "a8b2f4f00654901a992cfcd6e93f45af72e718cba6d1173089f609420f377d2e"
+    },
+    {
+      "source": "personalization/assets/codefusion-cover.jpg",
+      "destination": "src/assets/project/astroPixel2.jpg",
+      "sourceSha256": "800c7d553561b26dd5b6e4d5f65e94ae3dd540574f66725f441b9529e3fd28fb",
+      "expectedOldSha256": "ec5003088e2a2612af843ccc310354042442668f6976ad8b545d4653489a6b7a"
+    },
+    {
+      "source": "personalization/assets/codefusion-cover.jpg",
+      "destination": "src/assets/project/astroPixel3.jpg",
+      "sourceSha256": "800c7d553561b26dd5b6e4d5f65e94ae3dd540574f66725f441b9529e3fd28fb",
+      "expectedOldSha256": "6578ad699838750cef9986c6c9c6f4a2b9a5d3b5ddbf5ede0562678463b9aafb"
+    },
+    {
+      "source": "personalization/assets/pathfinder-cover.png",
+      "destination": "src/assets/project/krypton1.png",
+      "sourceSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "expectedOldSha256": "847dae71d343fa933f5db3e3258beda83513f912c5ead41a84d49c6543b22aa1"
+    },
+    {
+      "source": "personalization/assets/pathfinder-cover.png",
+      "destination": "src/assets/project/krypton2.png",
+      "sourceSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "expectedOldSha256": "6aa5f899714e70726402109d71a92d9a5f8746fdff5b5e5cd7a3b5e84f2e51c4"
+    },
+    {
+      "source": "personalization/assets/pathfinder-cover.png",
+      "destination": "src/assets/project/krypton3.png",
+      "sourceSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "expectedOldSha256": "5f38d2c4228683b1e6e4df97aa79ebea25d34195019437832db92ff0c4aabd1a"
+    },
+    {
+      "source": "personalization/assets/pathfinder-cover.png",
+      "destination": "src/assets/project/krypton4.png",
+      "sourceSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "expectedOldSha256": "931ee65ef1dac146fc4c272afb5200f499eedf895c3149a83a33f8dbbbf19127"
+    },
+    {
+      "source": "personalization/assets/pathfinder-cover.png",
+      "destination": "src/assets/project/krypton5.png",
+      "sourceSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "expectedOldSha256": "642e0cea492c4ba30aa08a4d1303ba2cbcdcdf0d4ecac7b536d779ae278df5ec"
+    },
+    {
+      "source": "personalization/assets/pathfinder-cover.png",
+      "destination": "src/assets/project/krypton6.png",
+      "sourceSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "expectedOldSha256": "3a1cd7e208846ac4758dab2014c6a9c81c1acdb8db596f236193e8a3865a5476"
+    },
+    {
+      "source": "personalization/assets/fraudlens-cover.png",
+      "destination": "src/assets/project/malariadetectionsystem.png",
+      "sourceSha256": "f5248b3eb26e4dcbea9578e59e1e36a27861437b534725d2bd76bb454fc360fd",
+      "expectedOldSha256": "bbe3ed546688f446e54497a2d17048ba03c49d660a7d6693d412b5538eb15ddc"
+    },
+    {
+      "source": "personalization/assets/fraudlens-cover.png",
+      "destination": "src/assets/project/malariadetectionsystem1.png",
+      "sourceSha256": "f5248b3eb26e4dcbea9578e59e1e36a27861437b534725d2bd76bb454fc360fd",
+      "expectedOldSha256": "6e1da31d29db3674db6b9b7e72814c3f25100b0374a09be306ae0d39e47b7383"
+    },
+    {
+      "source": "personalization/assets/fraudlens-cover.jpg",
+      "destination": "src/assets/project/malariadetectionsystem2.jpg",
+      "sourceSha256": "f126c3adc68be71099de6360ff12d1c346d638ca340a684dc664a8736bc7decb",
+      "expectedOldSha256": "09a1e0ee9319d36e7ca9558d307ca5b5e08275390643b1416fadde8ebf1441f3"
+    },
+    {
+      "source": "personalization/assets/finops-cover.png",
+      "destination": "src/assets/project/neuralnet.png",
+      "sourceSha256": "5d1d4589ea3c761f50c41c41823411542569b00afaf81be5ba7c6af96c52f0b1",
+      "expectedOldSha256": "09559c9b4e581a5c861aa41b95cae7f3a8d5809402abb75bbfff2a4d24e23150"
+    },
+    {
+      "source": "personalization/assets/finops-cover.png",
+      "destination": "src/assets/project/neuralnet1.png",
+      "sourceSha256": "5d1d4589ea3c761f50c41c41823411542569b00afaf81be5ba7c6af96c52f0b1",
+      "expectedOldSha256": "752bcbebfbe97540cdfdd906fac712f7648ef638419d8801e140afda31298a30"
+    },
+    {
+      "source": "personalization/assets/finops-cover.png",
+      "destination": "src/assets/project/neuralnet2.png",
+      "sourceSha256": "5d1d4589ea3c761f50c41c41823411542569b00afaf81be5ba7c6af96c52f0b1",
+      "expectedOldSha256": "1e714c87eb4e599e27e02328a9432eeee5c730cc5cc0bd46166cb6f6fd5c4aee"
+    },
+    {
+      "source": "personalization/assets/finops-cover.png",
+      "destination": "src/assets/project/neuralnet3.png",
+      "sourceSha256": "5d1d4589ea3c761f50c41c41823411542569b00afaf81be5ba7c6af96c52f0b1",
+      "expectedOldSha256": "79b5d5d099a3adbef3a9ed49249eaeb184ac921aac36f8ffe9da9aa41d234d87"
+    },
+    {
+      "source": "personalization/assets/finops-cover.png",
+      "destination": "src/assets/project/neuralnet4.png",
+      "sourceSha256": "5d1d4589ea3c761f50c41c41823411542569b00afaf81be5ba7c6af96c52f0b1",
+      "expectedOldSha256": "d5096320ecf74ec7187fab34cbc50b6f5b106f22c81e41cc698f0ead30666d0f"
+    },
+    {
+      "source": "personalization/assets/ecommerce-cover.png",
+      "destination": "src/assets/project/novalearn.png",
+      "sourceSha256": "9bdeac41859184ad936291f1f21745772503355e2cd0fd8f001215e74351bbd6",
+      "expectedOldSha256": "02abeef62f05e9cf193f873cebcaba7397fd0ff9fd3aed0fb9f8b6c852e024db"
+    },
+    {
+      "source": "personalization/assets/ecommerce-cover.png",
+      "destination": "src/assets/project/novalearn1.png",
+      "sourceSha256": "9bdeac41859184ad936291f1f21745772503355e2cd0fd8f001215e74351bbd6",
+      "expectedOldSha256": "dd0600ce5b47dd280e5cddff885d580555472b20d0bcfecd91621cb920d64fc5"
+    },
+    {
+      "source": "personalization/assets/ecommerce-cover.png",
+      "destination": "src/assets/project/novalearn2.png",
+      "sourceSha256": "9bdeac41859184ad936291f1f21745772503355e2cd0fd8f001215e74351bbd6",
+      "expectedOldSha256": "1d30672cff8e8fa78203090200b9713e6bf18b7bcf25aed32e2a6097bb525343"
+    },
+    {
+      "source": "personalization/assets/missing.jpg",
+      "destination": "src/assets/achievement/Certiport.jpg",
+      "sourceSha256": "e7f99c37d68514511e9151c0572d5bc82bf1cba742ae6040f0f73f83de23200b",
+      "expectedOldSha256": "3923f0c5d52b985b7ce3e374022f407837f831ae5846b7a48f5d35091370ee9a"
+    },
+    {
+      "source": "personalization/assets/missing.png",
+      "destination": "src/assets/achievement/Coursera.png",
+      "sourceSha256": "2bacff57aaa4c5510cb497765b794ba308f589483476e9ffcba2ce849cbff77f",
+      "expectedOldSha256": "f6d9ee36af1b9974cab248b794b0d3e4fac041381e274962aca0151c1ada6bda"
+    },
+    {
+      "source": "personalization/assets/missing.jpg",
+      "destination": "src/assets/achievement/HR.jpg",
+      "sourceSha256": "e7f99c37d68514511e9151c0572d5bc82bf1cba742ae6040f0f73f83de23200b",
+      "expectedOldSha256": "b4d02b263bdf9dc22b8f197168e49ae6b5bd36c39025523e60e6512b289e8555"
+    },
+    {
+      "source": "personalization/assets/missing.jpg",
+      "destination": "src/assets/achievement/free_code_camp.jpg",
+      "sourceSha256": "e7f99c37d68514511e9151c0572d5bc82bf1cba742ae6040f0f73f83de23200b",
+      "expectedOldSha256": "9116e64b13ad8da5bf173378a0957af4f63d7bb2755cc0363cd4c817b3193e68"
+    },
+    {
+      "source": "personalization/assets/nav-about.png",
+      "destination": "src/assets/nav-link-previews/about.png",
+      "sourceSha256": "11f0fa08a62416fcf9aa4c4e9d54c6d760b8d403ee4d9a7d8bf275a5254f25c0",
+      "expectedOldSha256": "6685cefea8cdde415a5698d7f1509e42fed6d42cbdf80f96f2d9957b9bc1fb40"
+    },
+    {
+      "source": "personalization/assets/nav-achievements.png",
+      "destination": "src/assets/nav-link-previews/achievements.png",
+      "sourceSha256": "e541bb38b9616993eb978e3f0979fae51900c19a265a07885b1a5ccfedfcf6e1",
+      "expectedOldSha256": "f5a906d95ca485487a4d38cd2ad40ea63e9c43b7312d9606b211b49132b8b2ae"
+    },
+    {
+      "source": "personalization/assets/nav-contact.png",
+      "destination": "src/assets/nav-link-previews/contact.png",
+      "sourceSha256": "30e83fe683ae4af7cd4e6522783e3dec5a9c2aa9d3ac24cd26a6ea859a811f25",
+      "expectedOldSha256": "41cf436ce5cf29ec3d75313eae650328c28cde8200502c5bf73ef9ab3a232b49"
+    },
+    {
+      "source": "personalization/assets/nav-home.png",
+      "destination": "src/assets/nav-link-previews/home.png",
+      "sourceSha256": "2cfaf4a0323c73d28fa3e8cfc34fed48b77bf826d45c0c75968903491aa2730f",
+      "expectedOldSha256": "ddfd011bc1ca7ed3f14c8457dcc7efbd8a33aa67dc53282fda495e5c93d52579"
+    },
+    {
+      "source": "personalization/assets/nav-projects.png",
+      "destination": "src/assets/nav-link-previews/projects.png",
+      "sourceSha256": "3084d56f0191070ee2d324f89733936d27318cc834dfbfe7fb235c98f5abf53c",
+      "expectedOldSha256": "acca8526f25827a75181f63789c0ac0c7079cbf0c3039a9cf29e3b7b0e3e5bf8"
+    },
+    {
+      "source": "personalization/assets/nav-skills.png",
+      "destination": "src/assets/nav-link-previews/skills.png",
+      "sourceSha256": "f511fc4eca77aee8ecf22dd826edd9c7d29b9e8057c71f521b02a6aec264e51c",
+      "expectedOldSha256": "478fd18c99d32520ea38f2ae415f727f9217013f0936f460271100489756a45c"
+    },
+    {
+      "source": "personalization/assets/nav-testimonials.png",
+      "destination": "src/assets/nav-link-previews/testimonials.png",
+      "sourceSha256": "d47a459b7b4498deb28a024652761c26f9c24858e57d3d78166318c648282172",
+      "expectedOldSha256": "bb8e2462d6b730ec042ed87ac4f2ac6f5864e3cb78b51b66381480d760f73305"
+    },
+    {
+      "source": "personalization/assets/nav-about.png",
+      "destination": "public/assets/nav-link-previews/about.png",
+      "sourceSha256": "11f0fa08a62416fcf9aa4c4e9d54c6d760b8d403ee4d9a7d8bf275a5254f25c0",
+      "expectedOldSha256": "6685cefea8cdde415a5698d7f1509e42fed6d42cbdf80f96f2d9957b9bc1fb40"
+    },
+    {
+      "source": "personalization/assets/nav-achievements.png",
+      "destination": "public/assets/nav-link-previews/achievements.png",
+      "sourceSha256": "e541bb38b9616993eb978e3f0979fae51900c19a265a07885b1a5ccfedfcf6e1",
+      "expectedOldSha256": "f5a906d95ca485487a4d38cd2ad40ea63e9c43b7312d9606b211b49132b8b2ae"
+    },
+    {
+      "source": "personalization/assets/nav-contact.png",
+      "destination": "public/assets/nav-link-previews/contact.png",
+      "sourceSha256": "30e83fe683ae4af7cd4e6522783e3dec5a9c2aa9d3ac24cd26a6ea859a811f25",
+      "expectedOldSha256": "41cf436ce5cf29ec3d75313eae650328c28cde8200502c5bf73ef9ab3a232b49"
+    },
+    {
+      "source": "personalization/assets/nav-home.png",
+      "destination": "public/assets/nav-link-previews/home.png",
+      "sourceSha256": "2cfaf4a0323c73d28fa3e8cfc34fed48b77bf826d45c0c75968903491aa2730f",
+      "expectedOldSha256": "ddfd011bc1ca7ed3f14c8457dcc7efbd8a33aa67dc53282fda495e5c93d52579"
+    },
+    {
+      "source": "personalization/assets/nav-projects.png",
+      "destination": "public/assets/nav-link-previews/projects.png",
+      "sourceSha256": "3084d56f0191070ee2d324f89733936d27318cc834dfbfe7fb235c98f5abf53c",
+      "expectedOldSha256": "acca8526f25827a75181f63789c0ac0c7079cbf0c3039a9cf29e3b7b0e3e5bf8"
+    },
+    {
+      "source": "personalization/assets/nav-skills.png",
+      "destination": "public/assets/nav-link-previews/skills.png",
+      "sourceSha256": "f511fc4eca77aee8ecf22dd826edd9c7d29b9e8057c71f521b02a6aec264e51c",
+      "expectedOldSha256": "478fd18c99d32520ea38f2ae415f727f9217013f0936f460271100489756a45c"
+    },
+    {
+      "source": "personalization/assets/nav-testimonials.png",
+      "destination": "public/assets/nav-link-previews/testimonials.png",
+      "sourceSha256": "d47a459b7b4498deb28a024652761c26f9c24858e57d3d78166318c648282172",
+      "expectedOldSha256": "bb8e2462d6b730ec042ed87ac4f2ac6f5864e3cb78b51b66381480d760f73305"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+import React, { Suspense, useEffect, useState } from "react";
+import { Canvas, useThree } from "@react-three/fiber";
+import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+
+import CanvasLoader from "../Loader";
+
+const EnableContextMenu = () => {
+  const { gl } = useThree();
+
+  useEffect(() => {
+    const domElement = gl.domElement;
+    const parent = domElement.parentElement;
+    const grandParent = parent?.parentElement;
+
+    // Enforce touch-action: pan-y so vertical swipes scroll the page natively on mobile
+    domElement.style.touchAction = "pan-y";
+    if (parent) parent.style.touchAction = "pan-y";
+    if (grandParent) grandParent.style.touchAction = "pan-y";
+
+    const handleContextMenu = (e) => {
+      // Prevent OrbitControls from calling preventDefault() on contextmenu
+      e.stopImmediatePropagation();
+    };
+
+    domElement.addEventListener("contextmenu", handleContextMenu, { capture: true });
+
+    return () => {
+      domElement.removeEventListener("contextmenu", handleContextMenu, { capture: true });
+    };
+  }, [gl]);
+
+  return null;
+};
+
+const Earth = () => {
+  const earth = useGLTF("./planet/scene_opt.glb");
+
+  return (
+    <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
+  );
+};
+
+const EarthCanvas = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    setIsMobile(mediaQuery.matches);
+    const handler = (e) => setIsMobile(e.matches);
+    mediaQuery.addEventListener("change", handler);
+    return () => mediaQuery.removeEventListener("change", handler);
+  }, []);
+
+  return (
+    <div className={`w-full h-full ${isMobile ? "pointer-events-none" : ""}`}>
+      <Canvas
+        shadows={!isMobile}
+        frameloop='demand'
+        dpr={[1, isMobile ? 1.2 : 2]}
+        gl={{ preserveDrawingBuffer: true, powerPreference: isMobile ? "low-power" : "high-performance" }}
+        camera={{
+          fov: 45,
+          near: 0.1,
+          far: 200,
+          position: [-4, 3, 6],
+        }}
+        style={{ touchAction: "pan-y" }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <EnableContextMenu />
+          <OrbitControls
+            autoRotate
+            enablePan={false}
+            enableZoom={false}
+            enableRotate={!isMobile}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+          <Earth />
+
+          <Preload all />
+        </Suspense>
+      </Canvas>
+    </div>
+  );
+};
+
+export default EarthCanvas;

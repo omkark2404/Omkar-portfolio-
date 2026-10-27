@@ -1,0 +1,529 @@
+{
+  "schemaVersion": 1,
+  "appliedAt": "2026-10-26T20:56:37.221Z",
+  "configSha256": "2392e6d43e76e9b40214754e53ff1f19562097b6ad1b6cddb8e1f2e4418392fb",
+  "baselineHead": "80e23d6d2323ba233b014535a1f64c94b795f1ac",
+  "publicationStatus": "BLOCKED — missing personal facts, unverified live demos and unrestricted-network browser check",
+  "files": [
+    {
+      "file": "src/components/Hero.jsx",
+      "oldSha256": "861a05ef67b22b4709ae6792b2e85ed41701bce598948af33109ba40ae199b80",
+      "newSha256": "861a05ef67b22b4709ae6792b2e85ed41701bce598948af33109ba40ae199b80",
+      "changed": false,
+      "bytes": 3233,
+      "originalSha256": "80d091681c583ca253d69d9021e098619eb2b1dc15ce07623ee2f3b063da81d4"
+    },
+    {
+      "file": "src/components/About.jsx",
+      "oldSha256": "ff232e17161096575b4e277122155b7138bc24f17f2b9154038062945af2d19e",
+      "newSha256": "ff232e17161096575b4e277122155b7138bc24f17f2b9154038062945af2d19e",
+      "changed": false,
+      "bytes": 2745,
+      "originalSha256": "db3cb51b0a645b0118bbf32a8ec299fca7cc5051a9ced4f59f1cedff1dfdbef6"
+    },
+    {
+      "file": "src/components/Contact.jsx",
+      "oldSha256": "2d03ac22b9aee4480c735caa4a9478707cd7af54383a6d4644cc440b99cb6186",
+      "newSha256": "2d03ac22b9aee4480c735caa4a9478707cd7af54383a6d4644cc440b99cb6186",
+      "changed": false,
+      "bytes": 10265,
+      "originalSha256": "75673e6faf67f1b23659c34aa5eaaa1263ee6dfec72e5700727fb5de3b51f1b4"
+    },
+    {
+      "file": "src/components/Navbar.jsx",
+      "oldSha256": "402fd3eada8951fac9e5a8c500706a393eeae7c882e8c618bc7176374776a67d",
+      "newSha256": "402fd3eada8951fac9e5a8c500706a393eeae7c882e8c618bc7176374776a67d",
+      "changed": false,
+      "bytes": 10719,
+      "originalSha256": "ad700f3a723d2e3b7b04affe7d08edecce226af95a5f2336016fe4d12098d4d2"
+    },
+    {
+      "file": "src/components/EasterEggs.jsx",
+      "oldSha256": "36e42a3ae13d168e2eccd4280fbb0a037ba86ecf14449c0df37b4ca6e94fb325",
+      "newSha256": "36e42a3ae13d168e2eccd4280fbb0a037ba86ecf14449c0df37b4ca6e94fb325",
+      "changed": false,
+      "bytes": 5845,
+      "originalSha256": "6c04c957fdf020ceff7e644c6f3f9bf19855bd98a26ccbbe9f8eeaaec3ad44f0"
+    },
+    {
+      "file": "index.html",
+      "oldSha256": "a52b1de13a18b6aa12378ebb38acad90b2c07d313face0f4620886ef0f8ff290",
+      "newSha256": "a52b1de13a18b6aa12378ebb38acad90b2c07d313face0f4620886ef0f8ff290",
+      "changed": false,
+      "bytes": 735,
+      "originalSha256": "de6a124c17ea15dc82faa115596bd4dd09b3f53e28045f15dc6809669a3a64af"
+    },
+    {
+      "file": "src/constants/index.js",
+      "oldSha256": "203e13a81483a95bb4cbbb3f9b7a0aa261214f602c97d943793a5fb9ef2a6101",
+      "newSha256": "203e13a81483a95bb4cbbb3f9b7a0aa261214f602c97d943793a5fb9ef2a6101",
+      "changed": false,
+      "bytes": 9862,
+      "originalSha256": "77d9ab0b4f93d68eef55a394083d03c5954a87b4135223e1b92501f785cd2713"
+    },
+    {
+      "file": "src/constants/skills.js",
+      "oldSha256": "25e3235c7dd9f10edf2493fcaf4851883d45f2d49c4785e43340a295768257b9",
+      "newSha256": "25e3235c7dd9f10edf2493fcaf4851883d45f2d49c4785e43340a295768257b9",
+      "changed": false,
+      "bytes": 10846,
+      "originalSha256": "9622a85e829989cb61f7962ca18ee92b101a7c28b0fed9eb812c4f2f42fdfe1a"
+    },
+    {
+      "file": "src/components/ProjectModal.jsx",
+      "oldSha256": "392674cb41b836cee2e33ec139eaee272c7c2670f09a7d5b7716783c4ae1faa1",
+      "newSha256": "392674cb41b836cee2e33ec139eaee272c7c2670f09a7d5b7716783c4ae1faa1",
+      "changed": false,
+      "bytes": 25400,
+      "originalSha256": "82de168684590a69b0872e5b2341dc7436884d79e7866cf73a0ca14c20ade648"
+    },
+    {
+      "file": "README.md",
+      "oldSha256": "d1fed442f935309992336ccfa3c7103df68f108624aa5daff34add0bda9e06f7",
+      "newSha256": "d1fed442f935309992336ccfa3c7103df68f108624aa5daff34add0bda9e06f7",
+      "changed": false,
+      "bytes": 7501,
+      "originalSha256": "585472e34bd20cfb1912d906249473f161a42634fafa301ac88dc40b263fe1db"
+    },
+    {
+      "file": "public/resume/omkar-kumar-resume.html",
+      "oldSha256": "bbfd0b92019f7a93fdd33c68c83d6e954c079898fe46ac6b92427f23ecc6c16e",
+      "newSha256": "bbfd0b92019f7a93fdd33c68c83d6e954c079898fe46ac6b92427f23ecc6c16e",
+      "changed": false,
+      "bytes": 4688,
+      "originalSha256": null
+    },
+    {
+      "file": ".env.example",
+      "oldSha256": "1f3fff5dbaa471a52d42d9aa448389c935c0b8b422e9c9ab14087d379938416c",
+      "newSha256": "1f3fff5dbaa471a52d42d9aa448389c935c0b8b422e9c9ab14087d379938416c",
+      "changed": false,
+      "bytes": 88,
+      "originalSha256": null
+    },
+    {
+      "file": "public/assets/projects/finops-cover.svg",
+      "oldSha256": "83d6d8880d0ddd6f5852a816e6bbcc4cc511268abfcd75000ac21bdde151fb74",
+      "newSha256": "83d6d8880d0ddd6f5852a816e6bbcc4cc511268abfcd75000ac21bdde151fb74",
+      "changed": false,
+      "bytes": 880,
+      "originalSha256": null
+    },
+    {
+      "file": "public/assets/projects/finops-dashboard.png",
+      "oldSha256": "6684aa5fe8911a25af16422c3290b586c57c5b5fa53acc34a54000ad1f0a26bb",
+      "newSha256": "6684aa5fe8911a25af16422c3290b586c57c5b5fa53acc34a54000ad1f0a26bb",
+      "changed": false,
+      "bytes": 102748,
+      "originalSha256": null
+    },
+    {
+      "file": "public/assets/projects/pathfinder-cover.svg",
+      "oldSha256": "6160a4b9d1b52abb491fa8cfe0ce723bb895584ea92df4aac6c3228c5a73dac4",
+      "newSha256": "6160a4b9d1b52abb491fa8cfe0ce723bb895584ea92df4aac6c3228c5a73dac4",
+      "changed": false,
+      "bytes": 885,
+      "originalSha256": null
+    },
+    {
+      "file": "public/assets/projects/fraudlens-cover.svg",
+      "oldSha256": "135c14975c8f611b5899a126a9880e5066967480a086f14216058b042b5ef5c2",
+      "newSha256": "135c14975c8f611b5899a126a9880e5066967480a086f14216058b042b5ef5c2",
+      "changed": false,
+      "bytes": 881,
+      "originalSha256": null
+    },
+    {
+      "file": "public/assets/projects/codefusion-cover.svg",
+      "oldSha256": "20c819de4045c642d283ff29d3ab30d1fe65e124319ff480362b60bee8455c11",
+      "newSha256": "20c819de4045c642d283ff29d3ab30d1fe65e124319ff480362b60bee8455c11",
+      "changed": false,
+      "bytes": 880,
+      "originalSha256": null
+    },
+    {
+      "file": "public/assets/projects/ecommerce-cover.svg",
+      "oldSha256": "d41b3bb700580ef5b6a26b1ba161036a5a97bac97cf4813f1c7449240fddff07",
+      "newSha256": "d41b3bb700580ef5b6a26b1ba161036a5a97bac97cf4813f1c7449240fddff07",
+      "changed": false,
+      "bytes": 889,
+      "originalSha256": null
+    },
+    {
+      "file": "public/assets/projects/ecommerce-dashboard.png",
+      "oldSha256": "5865a95f131b993b4522a55e5c7472007be08d30b0153e851195c1ef6e218280",
+      "newSha256": "5865a95f131b993b4522a55e5c7472007be08d30b0153e851195c1ef6e218280",
+      "changed": false,
+      "bytes": 128694,
+      "originalSha256": null
+    },
+    {
+      "file": "public/assets/personalization/avatar.svg",
+      "oldSha256": "6de63a82248faa85896cfcbdacdc4da0d1affd805b4e0749747775a463ffdf7f",
+      "newSha256": "6de63a82248faa85896cfcbdacdc4da0d1affd805b4e0749747775a463ffdf7f",
+      "changed": false,
+      "bytes": 225,
+      "originalSha256": null
+    },
+    {
+      "file": "public/assets/personalization/missing.svg",
+      "oldSha256": "4db1c38db222a2549318eee706c29834f1317255b7f81b2ce2f7d14cc7dd1099",
+      "newSha256": "4db1c38db222a2549318eee706c29834f1317255b7f81b2ce2f7d14cc7dd1099",
+      "changed": false,
+      "bytes": 863,
+      "originalSha256": null
+    },
+    {
+      "file": "src/assets/j-logo.png",
+      "oldSha256": "f0795852232ca148a76ba67d043f678b1b7af0e0c0c8604ff5e0b06d068c1f4c",
+      "newSha256": "f0795852232ca148a76ba67d043f678b1b7af0e0c0c8604ff5e0b06d068c1f4c",
+      "changed": false,
+      "bytes": 19670,
+      "originalSha256": "e70299e24c15475c1eed071672b929f3dd794ae6514f544a21930f544baf9dd6"
+    },
+    {
+      "file": "src/assets/logo.png",
+      "oldSha256": "f0795852232ca148a76ba67d043f678b1b7af0e0c0c8604ff5e0b06d068c1f4c",
+      "newSha256": "f0795852232ca148a76ba67d043f678b1b7af0e0c0c8604ff5e0b06d068c1f4c",
+      "changed": false,
+      "bytes": 19670,
+      "originalSha256": "7dac53772f73156fc80445c4959321e340907810c6362d0b90360324c10280d1"
+    },
+    {
+      "file": "logo.png",
+      "oldSha256": "f0795852232ca148a76ba67d043f678b1b7af0e0c0c8604ff5e0b06d068c1f4c",
+      "newSha256": "f0795852232ca148a76ba67d043f678b1b7af0e0c0c8604ff5e0b06d068c1f4c",
+      "changed": false,
+      "bytes": 19670,
+      "originalSha256": "e70299e24c15475c1eed071672b929f3dd794ae6514f544a21930f544baf9dd6"
+    },
+    {
+      "file": "public/logo.png",
+      "oldSha256": "f0795852232ca148a76ba67d043f678b1b7af0e0c0c8604ff5e0b06d068c1f4c",
+      "newSha256": "f0795852232ca148a76ba67d043f678b1b7af0e0c0c8604ff5e0b06d068c1f4c",
+      "changed": false,
+      "bytes": 19670,
+      "originalSha256": "e70299e24c15475c1eed071672b929f3dd794ae6514f544a21930f544baf9dd6"
+    },
+    {
+      "file": "src/assets/project/Krypton.png",
+      "oldSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "newSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "changed": false,
+      "bytes": 58174,
+      "originalSha256": "6be202e4ff40bc18cc25fc9fc97c975fb46b2082bd66d19f187a7bdb72c8e032"
+    },
+    {
+      "file": "src/assets/project/astroPixel.png",
+      "oldSha256": "83495cabeb311f9535a6e3cb8daab9166f2d44ca112b4d2cae5649996864e226",
+      "newSha256": "83495cabeb311f9535a6e3cb8daab9166f2d44ca112b4d2cae5649996864e226",
+      "changed": false,
+      "bytes": 60319,
+      "originalSha256": "124399c89d5fe5eccdae86c82fbbce5c0b455fc85a8ea2880dc484bd64a78301"
+    },
+    {
+      "file": "src/assets/project/astroPixel1.jpg",
+      "oldSha256": "800c7d553561b26dd5b6e4d5f65e94ae3dd540574f66725f441b9529e3fd28fb",
+      "newSha256": "800c7d553561b26dd5b6e4d5f65e94ae3dd540574f66725f441b9529e3fd28fb",
+      "changed": false,
+      "bytes": 49639,
+      "originalSha256": "a8b2f4f00654901a992cfcd6e93f45af72e718cba6d1173089f609420f377d2e"
+    },
+    {
+      "file": "src/assets/project/astroPixel2.jpg",
+      "oldSha256": "800c7d553561b26dd5b6e4d5f65e94ae3dd540574f66725f441b9529e3fd28fb",
+      "newSha256": "800c7d553561b26dd5b6e4d5f65e94ae3dd540574f66725f441b9529e3fd28fb",
+      "changed": false,
+      "bytes": 49639,
+      "originalSha256": "ec5003088e2a2612af843ccc310354042442668f6976ad8b545d4653489a6b7a"
+    },
+    {
+      "file": "src/assets/project/astroPixel3.jpg",
+      "oldSha256": "800c7d553561b26dd5b6e4d5f65e94ae3dd540574f66725f441b9529e3fd28fb",
+      "newSha256": "800c7d553561b26dd5b6e4d5f65e94ae3dd540574f66725f441b9529e3fd28fb",
+      "changed": false,
+      "bytes": 49639,
+      "originalSha256": "6578ad699838750cef9986c6c9c6f4a2b9a5d3b5ddbf5ede0562678463b9aafb"
+    },
+    {
+      "file": "src/assets/project/krypton1.png",
+      "oldSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "newSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "changed": false,
+      "bytes": 58174,
+      "originalSha256": "847dae71d343fa933f5db3e3258beda83513f912c5ead41a84d49c6543b22aa1"
+    },
+    {
+      "file": "src/assets/project/krypton2.png",
+      "oldSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "newSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "changed": false,
+      "bytes": 58174,
+      "originalSha256": "6aa5f899714e70726402109d71a92d9a5f8746fdff5b5e5cd7a3b5e84f2e51c4"
+    },
+    {
+      "file": "src/assets/project/krypton3.png",
+      "oldSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "newSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "changed": false,
+      "bytes": 58174,
+      "originalSha256": "5f38d2c4228683b1e6e4df97aa79ebea25d34195019437832db92ff0c4aabd1a"
+    },
+    {
+      "file": "src/assets/project/krypton4.png",
+      "oldSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "newSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "changed": false,
+      "bytes": 58174,
+      "originalSha256": "931ee65ef1dac146fc4c272afb5200f499eedf895c3149a83a33f8dbbbf19127"
+    },
+    {
+      "file": "src/assets/project/krypton5.png",
+      "oldSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "newSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "changed": false,
+      "bytes": 58174,
+      "originalSha256": "642e0cea492c4ba30aa08a4d1303ba2cbcdcdf0d4ecac7b536d779ae278df5ec"
+    },
+    {
+      "file": "src/assets/project/krypton6.png",
+      "oldSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "newSha256": "34e448fe0c7a9f4d06178f7d94759ca95e6d1676cf29fea1af79c0683fcaf48f",
+      "changed": false,
+      "bytes": 58174,
+      "originalSha256": "3a1cd7e208846ac4758dab2014c6a9c81c1acdb8db596f236193e8a3865a5476"
+    },
+    {
+      "file": "src/assets/project/malariadetectionsystem.png",
+      "oldSha256": "f5248b3eb26e4dcbea9578e59e1e36a27861437b534725d2bd76bb454fc360fd",
+      "newSha256": "f5248b3eb26e4dcbea9578e59e1e36a27861437b534725d2bd76bb454fc360fd",
+      "changed": false,
+      "bytes": 59694,
+      "originalSha256": "bbe3ed546688f446e54497a2d17048ba03c49d660a7d6693d412b5538eb15ddc"
+    },
+    {
+      "file": "src/assets/project/malariadetectionsystem1.png",
+      "oldSha256": "f5248b3eb26e4dcbea9578e59e1e36a27861437b534725d2bd76bb454fc360fd",
+      "newSha256": "f5248b3eb26e4dcbea9578e59e1e36a27861437b534725d2bd76bb454fc360fd",
+      "changed": false,
+      "bytes": 59694,
+      "originalSha256": "6e1da31d29db3674db6b9b7e72814c3f25100b0374a09be306ae0d39e47b7383"
+    },
+    {
+      "file": "src/assets/project/malariadetectionsystem2.jpg",
+      "oldSha256": "f126c3adc68be71099de6360ff12d1c346d638ca340a684dc664a8736bc7decb",
+      "newSha256": "f126c3adc68be71099de6360ff12d1c346d638ca340a684dc664a8736bc7decb",
+      "changed": false,
+      "bytes": 49025,
+      "originalSha256": "09a1e0ee9319d36e7ca9558d307ca5b5e08275390643b1416fadde8ebf1441f3"
+    },
+    {
+      "file": "src/assets/project/neuralnet.png",
+      "oldSha256": "5d1d4589ea3c761f50c41c41823411542569b00afaf81be5ba7c6af96c52f0b1",
+      "newSha256": "5d1d4589ea3c761f50c41c41823411542569b00afaf81be5ba7c6af96c52f0b1",
+      "changed": false,
+      "bytes": 60253,
+      "originalSha256": "09559c9b4e581a5c861aa41b95cae7f3a8d5809402abb75bbfff2a4d24e23150"
+    },
+    {
+      "file": "src/assets/project/neuralnet1.png",
+      "oldSha256": "5d1d4589ea3c761f50c41c41823411542569b00afaf81be5ba7c6af96c52f0b1",
+      "newSha256": "5d1d4589ea3c761f50c41c41823411542569b00afaf81be5ba7c6af96c52f0b1",
+      "changed": false,
+      "bytes": 60253,
+      "originalSha256": "752bcbebfbe97540cdfdd906fac712f7648ef638419d8801e140afda31298a30"
+    },
+    {
+      "file": "src/assets/project/neuralnet2.png",
+      "oldSha256": "5d1d4589ea3c761f50c41c41823411542569b00afaf81be5ba7c6af96c52f0b1",
+      "newSha256": "5d1d4589ea3c761f50c41c41823411542569b00afaf81be5ba7c6af96c52f0b1",
+      "changed": false,
+      "bytes": 60253,
+      "originalSha256": "1e714c87eb4e599e27e02328a9432eeee5c730cc5cc0bd46166cb6f6fd5c4aee"
+    },
+    {
+      "file": "src/assets/project/neuralnet3.png",
+      "oldSha256": "5d1d4589ea3c761f50c41c41823411542569b00afaf81be5ba7c6af96c52f0b1",
+      "newSha256": "5d1d4589ea3c761f50c41c41823411542569b00afaf81be5ba7c6af96c52f0b1",
+      "changed": false,
+      "bytes": 60253,
+      "originalSha256": "79b5d5d099a3adbef3a9ed49249eaeb184ac921aac36f8ffe9da9aa41d234d87"
+    },
+    {
+      "file": "src/assets/project/neuralnet4.png",
+      "oldSha256": "5d1d4589ea3c761f50c41c41823411542569b00afaf81be5ba7c6af96c52f0b1",
+      "newSha256": "5d1d4589ea3c761f50c41c41823411542569b00afaf81be5ba7c6af96c52f0b1",
+      "changed": false,
+      "bytes": 60253,
+      "originalSha256": "d5096320ecf74ec7187fab34cbc50b6f5b106f22c81e41cc698f0ead30666d0f"
+    },
+    {
+      "file": "src/assets/project/novalearn.png",
+      "oldSha256": "9bdeac41859184ad936291f1f21745772503355e2cd0fd8f001215e74351bbd6",
+      "newSha256": "9bdeac41859184ad936291f1f21745772503355e2cd0fd8f001215e74351bbd6",
+      "changed": false,
+      "bytes": 64658,
+      "originalSha256": "02abeef62f05e9cf193f873cebcaba7397fd0ff9fd3aed0fb9f8b6c852e024db"
+    },
+    {
+      "file": "src/assets/project/novalearn1.png",
+      "oldSha256": "9bdeac41859184ad936291f1f21745772503355e2cd0fd8f001215e74351bbd6",
+      "newSha256": "9bdeac41859184ad936291f1f21745772503355e2cd0fd8f001215e74351bbd6",
+      "changed": false,
+      "bytes": 64658,
+      "originalSha256": "dd0600ce5b47dd280e5cddff885d580555472b20d0bcfecd91621cb920d64fc5"
+    },
+    {
+      "file": "src/assets/project/novalearn2.png",
+      "oldSha256": "9bdeac41859184ad936291f1f21745772503355e2cd0fd8f001215e74351bbd6",
+      "newSha256": "9bdeac41859184ad936291f1f21745772503355e2cd0fd8f001215e74351bbd6",
+      "changed": false,
+      "bytes": 64658,
+      "originalSha256": "1d30672cff8e8fa78203090200b9713e6bf18b7bcf25aed32e2a6097bb525343"
+    },
+    {
+      "file": "src/assets/achievement/Certiport.jpg",
+      "oldSha256": "e7f99c37d68514511e9151c0572d5bc82bf1cba742ae6040f0f73f83de23200b",
+      "newSha256": "e7f99c37d68514511e9151c0572d5bc82bf1cba742ae6040f0f73f83de23200b",
+      "changed": false,
+      "bytes": 44835,
+      "originalSha256": "3923f0c5d52b985b7ce3e374022f407837f831ae5846b7a48f5d35091370ee9a"
+    },
+    {
+      "file": "src/assets/achievement/Coursera.png",
+      "oldSha256": "2bacff57aaa4c5510cb497765b794ba308f589483476e9ffcba2ce849cbff77f",
+      "newSha256": "2bacff57aaa4c5510cb497765b794ba308f589483476e9ffcba2ce849cbff77f",
+      "changed": false,
+      "bytes": 55778,
+      "originalSha256": "f6d9ee36af1b9974cab248b794b0d3e4fac041381e274962aca0151c1ada6bda"
+    },
+    {
+      "file": "src/assets/achievement/HR.jpg",
+      "oldSha256": "e7f99c37d68514511e9151c0572d5bc82bf1cba742ae6040f0f73f83de23200b",
+      "newSha256": "e7f99c37d68514511e9151c0572d5bc82bf1cba742ae6040f0f73f83de23200b",
+      "changed": false,
+      "bytes": 44835,
+      "originalSha256": "b4d02b263bdf9dc22b8f197168e49ae6b5bd36c39025523e60e6512b289e8555"
+    },
+    {
+      "file": "src/assets/achievement/free_code_camp.jpg",
+      "oldSha256": "e7f99c37d68514511e9151c0572d5bc82bf1cba742ae6040f0f73f83de23200b",
+      "newSha256": "e7f99c37d68514511e9151c0572d5bc82bf1cba742ae6040f0f73f83de23200b",
+      "changed": false,
+      "bytes": 44835,
+      "originalSha256": "9116e64b13ad8da5bf173378a0957af4f63d7bb2755cc0363cd4c817b3193e68"
+    },
+    {
+      "file": "src/assets/nav-link-previews/about.png",
+      "oldSha256": "11f0fa08a62416fcf9aa4c4e9d54c6d760b8d403ee4d9a7d8bf275a5254f25c0",
+      "newSha256": "11f0fa08a62416fcf9aa4c4e9d54c6d760b8d403ee4d9a7d8bf275a5254f25c0",
+      "changed": false,
+      "bytes": 55212,
+      "originalSha256": "6685cefea8cdde415a5698d7f1509e42fed6d42cbdf80f96f2d9957b9bc1fb40"
+    },
+    {
+      "file": "src/assets/nav-link-previews/achievements.png",
+      "oldSha256": "e541bb38b9616993eb978e3f0979fae51900c19a265a07885b1a5ccfedfcf6e1",
+      "newSha256": "e541bb38b9616993eb978e3f0979fae51900c19a265a07885b1a5ccfedfcf6e1",
+      "changed": false,
+      "bytes": 48334,
+      "originalSha256": "f5a906d95ca485487a4d38cd2ad40ea63e9c43b7312d9606b211b49132b8b2ae"
+    },
+    {
+      "file": "src/assets/nav-link-previews/contact.png",
+      "oldSha256": "7038064324cf2c2a6437a2ff2b50ef8f56c2d2d8c19182e158097073ee5d4cbf",
+      "newSha256": "30e83fe683ae4af7cd4e6522783e3dec5a9c2aa9d3ac24cd26a6ea859a811f25",
+      "changed": true,
+      "bytes": 229675,
+      "originalSha256": "41cf436ce5cf29ec3d75313eae650328c28cde8200502c5bf73ef9ab3a232b49"
+    },
+    {
+      "file": "src/assets/nav-link-previews/home.png",
+      "oldSha256": "2cfaf4a0323c73d28fa3e8cfc34fed48b77bf826d45c0c75968903491aa2730f",
+      "newSha256": "2cfaf4a0323c73d28fa3e8cfc34fed48b77bf826d45c0c75968903491aa2730f",
+      "changed": false,
+      "bytes": 614423,
+      "originalSha256": "ddfd011bc1ca7ed3f14c8457dcc7efbd8a33aa67dc53282fda495e5c93d52579"
+    },
+    {
+      "file": "src/assets/nav-link-previews/projects.png",
+      "oldSha256": "3084d56f0191070ee2d324f89733936d27318cc834dfbfe7fb235c98f5abf53c",
+      "newSha256": "3084d56f0191070ee2d324f89733936d27318cc834dfbfe7fb235c98f5abf53c",
+      "changed": false,
+      "bytes": 97326,
+      "originalSha256": "acca8526f25827a75181f63789c0ac0c7079cbf0c3039a9cf29e3b7b0e3e5bf8"
+    },
+    {
+      "file": "src/assets/nav-link-previews/skills.png",
+      "oldSha256": "f511fc4eca77aee8ecf22dd826edd9c7d29b9e8057c71f521b02a6aec264e51c",
+      "newSha256": "f511fc4eca77aee8ecf22dd826edd9c7d29b9e8057c71f521b02a6aec264e51c",
+      "changed": false,
+      "bytes": 344386,
+      "originalSha256": "478fd18c99d32520ea38f2ae415f727f9217013f0936f460271100489756a45c"
+    },
+    {
+      "file": "src/assets/nav-link-previews/testimonials.png",
+      "oldSha256": "d47a459b7b4498deb28a024652761c26f9c24858e57d3d78166318c648282172",
+      "newSha256": "d47a459b7b4498deb28a024652761c26f9c24858e57d3d78166318c648282172",
+      "changed": false,
+      "bytes": 34309,
+      "originalSha256": "bb8e2462d6b730ec042ed87ac4f2ac6f5864e3cb78b51b66381480d760f73305"
+    },
+    {
+      "file": "public/assets/nav-link-previews/about.png",
+      "oldSha256": "11f0fa08a62416fcf9aa4c4e9d54c6d760b8d403ee4d9a7d8bf275a5254f25c0",
+      "newSha256": "11f0fa08a62416fcf9aa4c4e9d54c6d760b8d403ee4d9a7d8bf275a5254f25c0",
+      "changed": false,
+      "bytes": 55212,
+      "originalSha256": "6685cefea8cdde415a5698d7f1509e42fed6d42cbdf80f96f2d9957b9bc1fb40"
+    },
+    {
+      "file": "public/assets/nav-link-previews/achievements.png",
+      "oldSha256": "e541bb38b9616993eb978e3f0979fae51900c19a265a07885b1a5ccfedfcf6e1",
+      "newSha256": "e541bb38b9616993eb978e3f0979fae51900c19a265a07885b1a5ccfedfcf6e1",
+      "changed": false,
+      "bytes": 48334,
+      "originalSha256": "f5a906d95ca485487a4d38cd2ad40ea63e9c43b7312d9606b211b49132b8b2ae"
+    },
+    {
+      "file": "public/assets/nav-link-previews/contact.png",
+      "oldSha256": "7038064324cf2c2a6437a2ff2b50ef8f56c2d2d8c19182e158097073ee5d4cbf",
+      "newSha256": "30e83fe683ae4af7cd4e6522783e3dec5a9c2aa9d3ac24cd26a6ea859a811f25",
+      "changed": true,
+      "bytes": 229675,
+      "originalSha256": "41cf436ce5cf29ec3d75313eae650328c28cde8200502c5bf73ef9ab3a232b49"
+    },
+    {
+      "file": "public/assets/nav-link-previews/home.png",
+      "oldSha256": "2cfaf4a0323c73d28fa3e8cfc34fed48b77bf826d45c0c75968903491aa2730f",
+      "newSha256": "2cfaf4a0323c73d28fa3e8cfc34fed48b77bf826d45c0c75968903491aa2730f",
+      "changed": false,
+      "bytes": 614423,
+      "originalSha256": "ddfd011bc1ca7ed3f14c8457dcc7efbd8a33aa67dc53282fda495e5c93d52579"
+    },
+    {
+      "file": "public/assets/nav-link-previews/projects.png",
+      "oldSha256": "3084d56f0191070ee2d324f89733936d27318cc834dfbfe7fb235c98f5abf53c",
+      "newSha256": "3084d56f0191070ee2d324f89733936d27318cc834dfbfe7fb235c98f5abf53c",
+      "changed": false,
+      "bytes": 97326,
+      "originalSha256": "acca8526f25827a75181f63789c0ac0c7079cbf0c3039a9cf29e3b7b0e3e5bf8"
+    },
+    {
+      "file": "public/assets/nav-link-previews/skills.png",
+      "oldSha256": "f511fc4eca77aee8ecf22dd826edd9c7d29b9e8057c71f521b02a6aec264e51c",
+      "newSha256": "f511fc4eca77aee8ecf22dd826edd9c7d29b9e8057c71f521b02a6aec264e51c",
+      "changed": false,
+      "bytes": 344386,
+      "originalSha256": "478fd18c99d32520ea38f2ae415f727f9217013f0936f460271100489756a45c"
+    },
+    {
+      "file": "public/assets/nav-link-previews/testimonials.png",
+      "oldSha256": "d47a459b7b4498deb28a024652761c26f9c24858e57d3d78166318c648282172",
+      "newSha256": "d47a459b7b4498deb28a024652761c26f9c24858e57d3d78166318c648282172",
+      "changed": false,
+      "bytes": 34309,
+      "originalSha256": "bb8e2462d6b730ec042ed87ac4f2ac6f5864e3cb78b51b66381480d760f73305"
+    }
+  ]
+}
