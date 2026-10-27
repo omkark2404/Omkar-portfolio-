@@ -1,3 +1,4 @@
+import VisualBoundary from "./VisualBoundary";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
@@ -157,10 +158,10 @@ const Contact = () => {
               Contact Me
             </h3>
             <p className="mt-2 text-sm sm:text-base text-[#8ec5ff]/90 leading-relaxed">
-              Have a project in mind, an internship opportunity, or a technical inquiry? Send a note below or reach out directly.
+              Have a project in mind, an internship opportunity, or a technical inquiry? Connect with me on LinkedIn to discuss opportunities.
             </p>
 
-            <form
+            {CONTACT_EMAIL !== "MISSING" && <form
               ref={formRef}
               onSubmit={handleSubmit}
               className="mt-6 flex flex-col gap-5 sm:gap-6"
@@ -226,22 +227,19 @@ const Contact = () => {
                   Reach out via LinkedIn
                 </span>
               </div>
-            </form>
+            </form>}
 
             {/* Direct Contact Details Divider */}
             <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs sm:text-sm text-secondary">
               <div className="flex flex-col gap-1.5">
-                <a
+                {CONTACT_EMAIL !== "MISSING" && <a
                   href={CONTACT_EMAIL === "MISSING" ? undefined : `mailto:${CONTACT_EMAIL}`}
                   className="flex items-center gap-2 hover:text-[#8ec5ff] transition-colors"
                 >
                   <FaEnvelope className="text-[#8ec5ff]" />
-                  <span>MISSING</span>
-                </a>
-                <div className="flex items-center gap-2">
-                  <FaMapMarkerAlt className="text-[#8ec5ff]" />
-                  <span>MISSING</span>
-                </div>
+                  <span>{CONTACT_EMAIL}</span>
+                </a>}
+                <a href="https://www.linkedin.com/in/omkarkr/" target="_blank" rel="noopener noreferrer" className="text-[#8ec5ff] underline">Contact me on LinkedIn</a>
               </div>
 
               <div className="flex items-center gap-3">
@@ -272,7 +270,7 @@ const Contact = () => {
             variants={slideIn("right", "tween", 0.2, 1)}
             className="flex-1 w-full h-[380px] sm:h-[450px] md:h-[520px] xl:h-[600px] flex items-center justify-center"
           >
-            <EarthCanvas />
+            <VisualBoundary><EarthCanvas /></VisualBoundary>
           </motion.div>
         </div>
       </div>

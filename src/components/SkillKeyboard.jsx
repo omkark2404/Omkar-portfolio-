@@ -2,7 +2,7 @@
 // This component renders an interactive 3D skill keyboard using Spline and GSAP animations.
 // Each key represents a skill, and the keyboard animates in response to user actions.
 
-import { Application } from "@splinetool/runtime";
+
 import gsap from "gsap";
 import React, { Suspense, useEffect, useRef, useState } from "react";
 import { SKILLS, SkillNames } from "../constants/skills";
@@ -387,7 +387,7 @@ const SkillKeyboard = () => {
           <div className="grid grid-cols-3 sm:grid-cols-4 gap-2.5 sm:gap-3.5 w-full">
             {CATEGORIES[activeCategory].map((skillKey) => {
               const skill = SKILLS[skillKey];
-              if (!skill) return null;
+              if (!skill || skill.label.includes("reference key")) return null;
               const isSelected = selectedSkill?.name === skill.name;
 
               return (
@@ -463,7 +463,7 @@ const SkillKeyboard = () => {
           Skills
         </h2>
         <p style={{ textAlign: "center", color: "#aaa" }}>
-          (hint: press a key)
+          Python · SQL · FastAPI · Flask · React · MySQL · SQLite · Docker — used across the linked repositories. Keyboard artwork includes reference technologies; it is not a proficiency rating.
         </p>
         <Suspense fallback={<div className="text-white">Loading 3D Keyboard...</div>}>
           <Spline

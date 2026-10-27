@@ -57,18 +57,18 @@ export const SKILLS = {
   html: {
     id: 3,
     name: "html",
-    label: "HTML — MISSING",
+    label: "HTML — reference key",
     shortDescription:
-      "MISSING — verified personal use has not been supplied. This is a reference key in the original keyboard, not a claimed skill.",
+      "Reference key from the original keyboard artwork; not included in my verified project skills.",
     color: "#e34c26",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
   },
   css: {
     id: 4,
     name: "css",
-    label: "CSS — MISSING",
+    label: "CSS — reference key",
     shortDescription:
-      "MISSING — verified personal use has not been supplied. This is a reference key in the original keyboard, not a claimed skill.",
+      "Reference key from the original keyboard artwork; not included in my verified project skills.",
     color: "#563d7c",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
   },
@@ -93,9 +93,9 @@ export const SKILLS = {
   tailwind: {
     id: 7,
     name: "tailwind",
-    label: "Tailwind — MISSING",
+    label: "Tailwind — reference key",
     shortDescription:
-      "MISSING — verified personal use has not been supplied. This is a reference key in the original keyboard, not a claimed skill.",
+      "Reference key from the original keyboard artwork; not included in my verified project skills.",
     color: "#38bdf8",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
   },
@@ -138,36 +138,36 @@ export const SKILLS = {
   java: {
     id: 12,
     name: "java",
-    label: "Java — MISSING",
+    label: "Java — reference key",
     shortDescription:
-      "MISSING — verified personal use has not been supplied. This is a reference key in the original keyboard, not a claimed skill.",
+      "Reference key from the original keyboard artwork; not included in my verified project skills.",
     color: "#ea2d2e",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
   },
   spring: {
     id: 13,
     name: "spring",
-    label: "Java Spring — MISSING",
+    label: "Java Spring — reference key",
     shortDescription:
-      "MISSING — verified personal use has not been supplied. This is a reference key in the original keyboard, not a claimed skill.",
+      "Reference key from the original keyboard artwork; not included in my verified project skills.",
     color: "#6db33f",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
   },
   springboot: {
     id: 14,
     name: "springboot",
-    label: "Spring Boot — MISSING",
+    label: "Spring Boot — reference key",
     shortDescription:
-      "MISSING — verified personal use has not been supplied. This is a reference key in the original keyboard, not a claimed skill.",
+      "Reference key from the original keyboard artwork; not included in my verified project skills.",
     color: "#6db33f",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
   },
   rust: {
     id: 15,
     name: "rust",
-    label: "Rust — MISSING",
+    label: "Rust — reference key",
     shortDescription:
-      "MISSING — verified personal use has not been supplied. This is a reference key in the original keyboard, not a claimed skill.",
+      "Reference key from the original keyboard artwork; not included in my verified project skills.",
     color: "#dea584",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg",
   },
@@ -201,18 +201,18 @@ export const SKILLS = {
   mongodb: {
     id: 19,
     name: "mongodb",
-    label: "MongoDB — MISSING",
+    label: "MongoDB — reference key",
     shortDescription:
-      "MISSING — verified personal use has not been supplied. This is a reference key in the original keyboard, not a claimed skill.",
+      "Reference key from the original keyboard artwork; not included in my verified project skills.",
     color: "#47a248",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
   redis: {
     id: 20,
     name: "redis",
-    label: "Redis — MISSING",
+    label: "Redis — reference key",
     shortDescription:
-      "MISSING — verified personal use has not been supplied. This is a reference key in the original keyboard, not a claimed skill.",
+      "Reference key from the original keyboard artwork; not included in my verified project skills.",
     color: "#dc382d",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
   },
@@ -264,9 +264,9 @@ export const SKILLS = {
   linux: {
     id: 26,
     name: "linux",
-    label: "Linux — MISSING",
+    label: "Linux — reference key",
     shortDescription:
-      "MISSING — verified personal use has not been supplied. This is a reference key in the original keyboard, not a claimed skill.",
+      "Reference key from the original keyboard artwork; not included in my verified project skills.",
     color: "#fcc624",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
   },
@@ -282,27 +282,27 @@ export const SKILLS = {
   nginx: {
     id: 28,
     name: "nginx",
-    label: "NginX — MISSING",
+    label: "NginX — reference key",
     shortDescription:
-      "MISSING — verified personal use has not been supplied. This is a reference key in the original keyboard, not a claimed skill.",
+      "Reference key from the original keyboard artwork; not included in my verified project skills.",
     color: "#009639",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
   },
   aws: {
     id: 29,
     name: "aws",
-    label: "AWS — MISSING",
+    label: "AWS — reference key",
     shortDescription:
-      "MISSING — verified personal use has not been supplied. This is a reference key in the original keyboard, not a claimed skill.",
+      "Reference key from the original keyboard artwork; not included in my verified project skills.",
     color: "#ff9900",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
   },
   vercel: {
     id: 30,
     name: "vercel",
-    label: "Vercel — MISSING",
+    label: "Vercel — reference key",
     shortDescription:
-      "MISSING — verified personal use has not been supplied. This is a reference key in the original keyboard, not a claimed skill.",
+      "Reference key from the original keyboard artwork; not included in my verified project skills.",
     color: "#ffffff",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
   },

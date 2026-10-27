@@ -347,66 +347,6 @@ const ProjectModal = ({
                 {project.name}
               </motion.h2>
 
-              {/* Metrics Row - Always Show */}
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.15 }}
-                className="flex flex-wrap gap-6 mb-6 pb-4 border-b border-white/10"
-              >
-                {/* Stars - Apple SF Symbol Style */}
-                <div className="flex items-center gap-3">
-                  <svg
-                    className="w-6 h-6 text-amber-400"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                  </svg>
-                  <span className="text-white font-semibold text-sm tracking-tight">
-                    {project.metrics?.stars ?? "MISSING"}
-                  </span>
-                </div>
-                {/* Forks - Apple SF Symbol Style (Code Branch) */}
-                <div className="flex items-center gap-3">
-                  <svg
-                    className="w-6 h-6 text-emerald-400"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.2"
-                    viewBox="0 0 24 24"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <line x1="6" y1="3" x2="6" y2="15" />
-                    <circle cx="18" cy="6" r="3" />
-                    <circle cx="6" cy="18" r="3" />
-                    <path d="M18 9a9 9 0 01-9 9" />
-                  </svg>
-                  <span className="text-white font-semibold text-sm tracking-tight">
-                    {project.metrics?.forks ?? "MISSING"}
-                  </span>
-                </div>
-                {/* Views - Apple SF Symbol Style (Eye) */}
-                <div className="flex items-center gap-3">
-                  <svg
-                    className="w-6 h-6 text-violet-400"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.2"
-                    viewBox="0 0 24 24"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-                    <circle cx="12" cy="12" r="3" />
-                  </svg>
-                  <span className="text-white font-semibold text-sm tracking-tight">
-                    {project.metrics?.views ?? "MISSING"}
-                  </span>
-                </div>
-              </motion.div>
-
               {/* Description */}
               <motion.div
                 initial={{ opacity: 0, y: 10 }}

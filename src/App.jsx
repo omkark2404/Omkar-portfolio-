@@ -1,3 +1,4 @@
+import VisualBoundary from "./components/VisualBoundary";
 import { BrowserRouter } from "react-router-dom";
 
 import {
@@ -33,12 +34,10 @@ const App = () => {
                 <Navbar />
                 <Hero />
               </div>
-              <StarsCanvas />
+              <VisualBoundary><StarsCanvas /></VisualBoundary>
               <About />
               <Works />
-              <Achievement />
-              <SkillKeyboard />
-              <Feedbacks />
+              <VisualBoundary fallback={<section id="skills" className="p-8 text-white"><h2>Project Skills</h2><p>Python · SQL · FastAPI · Flask · React · MySQL · SQLite · Docker. Explore the linked repositories for examples.</p></section>}><SkillKeyboard /></VisualBoundary>
               <div className="relative z-0">
                 <Contact />
               </div>

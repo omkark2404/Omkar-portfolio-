@@ -1,3 +1,4 @@
+import VisualBoundary from "./VisualBoundary";
 import { useEffect, useState } from "react";
 
 import useParallax from "../reactbits/hooks/useParallax";
@@ -54,6 +55,7 @@ const Hero = () => {
             Hi, I'm <span className="text-[#5850EC]">Omkar Kumar</span>
           </h1>
           <p className={`${styles.heroSubText} mt-1.5 sm:mt-2 text-white-100`}>
+            <span className="sr-only">Aspiring Business Analyst and AI/ML Engineer. </span>
             I'm{" "}
             <span
               className="typed"
@@ -82,7 +84,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      <VisualBoundary><ComputersCanvas /></VisualBoundary>
     </section>
   );
 };

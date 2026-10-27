@@ -27,19 +27,9 @@ const NAV_LINKS = [
     img: project,
   },
   {
-    title: "achievements",
-    href: "#achievements",
-    img: achievements,
-  },
-  {
     title: "skills",
     href: "#skills",
     img: skills,
-  },
-  {
-    title: "testimonials",
-    href: "#testimonials",
-    img: testimonials,
   },
   {
     title: "contact",

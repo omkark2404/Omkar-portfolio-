@@ -7,9 +7,11 @@ const EasterEggs = () => {
   const { isDevToolsOpen } = useDevToolsOpen();
 
   useEffect(() => {
+    const timers = [];
+    const schedule = (callback, delay) => { const id = setTimeout(callback, delay); timers.push(id); return id; };
     if (!isDevToolsOpen) return;
     if (typeof console !== "undefined") {
-      console.clear();
+      // Preserve diagnostic console output.
 
       console.log(
         "%c// SYSTEM_LOG: UNEXPECTED_ACCESS",
@@ -19,8 +21,8 @@ const EasterEggs = () => {
         "%cHold on a second... You weren't supposed to be in here. 👀",
         "color: #00BFFF; font-size: 22px; font-weight: bold; font-family: 'Arial', sans-serif;"
       );
-      setTimeout(() => {
-        console.clear();
+      schedule(() => {
+        // Preserve diagnostic console output.
 
         // --- The Hook: Presented as a system alert or a direct message. ---
         console.log(
@@ -32,11 +34,11 @@ const EasterEggs = () => {
           "color: #00BFFF; font-size: 22px; font-weight: bold; font-family: 'Arial', sans-serif;"
         );
 
-        const revealTimeout = setTimeout(() => {
+        const revealTimeout = schedule(() => {
           console.log(
             "%cOkay, fine. You found the secret passage. Curious minds get rewarded, right?\n" +
               "There's a hidden command to unlock this site's true potential.\n" +
-              "The password is the name of the person who built this whole thing.",
+              "The password is the first name of this portfolio's owner.",
             "background-color: #f4f4f4; color: #333; padding: 15px; border-left: 5px solid #00BFFF; line-height: 1.6; font-family: 'Arial', sans-serif; font-size: 15px;"
           );
           console.log(
@@ -51,7 +53,7 @@ const EasterEggs = () => {
           Object.defineProperty(window, name, {
             get() {
               clearTimeout(revealTimeout);
-              console.clear();
+              // Preserve diagnostic console output.
               soundEffects.playMagic();
 
               console.log(
@@ -62,7 +64,7 @@ const EasterEggs = () => {
 
               // ... inside the get() function for the Blueprint theme ...
 
-              const warningTimeout = setTimeout(() => {
+              const warningTimeout = schedule(() => {
                 // THE FIX: Use two separate console.log calls.
                 console.log(
                   "%cJust be careful what you change in here...",
@@ -76,7 +78,7 @@ const EasterEggs = () => {
 
               // ... rest of the code
               window.__easterEggUnlocked = true;
-              const catTimeout = setTimeout(() => {
+              const catTimeout = schedule(() => {
                 console.log(
                   "%cAlright, enough with the serious stuff! Want to see my secret project?\n" +
                     "It's a bit... flashy. And involves a cat.",
@@ -96,7 +98,7 @@ const EasterEggs = () => {
         if (!Object.hasOwn(window, "Bankai")) {
           Object.defineProperty(window, "Bankai", {
             get() {
-              console.clear();
+              // Preserve diagnostic console output.
               console.log(
                 "%c💥 BANKAI!%c Katen Kyokotsu: Karamatsu Shinju 🗡️",
                 // Style for "BANKAI!"
@@ -110,6 +112,7 @@ const EasterEggs = () => {
         }
       }, 3000);
     }
+    return () => timers.forEach(clearTimeout);
   }, [isDevToolsOpen]);
 
   return <NyanCat />;

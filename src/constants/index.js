@@ -1,85 +1,10 @@
 import { code, concepts, designs, ideas } from "../assets";
 
-export const navLinks = [{id:"about",title:"About"},{id:"achievements",title:"Achievement"},{id:"contact",title:"Contact"}];
+export const navLinks = [{id:"about",title:"About"},{id:"projects",title:"Projects"},{id:"contact",title:"Contact"}];
 
-const achievements = [
-  {
-    "title": [
-      "MISSING"
-    ],
-    "company_name": "Verified credential pending 1",
-    "icon": "/assets/personalization/missing.svg",
-    "iconBg": "#383E56",
-    "date": "MISSING",
-    "points": [
-      "MISSING — no verified achievement or certification supplied. Local draft placeholder."
-    ],
-    "credential": []
-  },
-  {
-    "title": [
-      "MISSING"
-    ],
-    "company_name": "Verified credential pending 2",
-    "icon": "/assets/personalization/missing.svg",
-    "iconBg": "#383E56",
-    "date": "MISSING",
-    "points": [
-      "MISSING — no verified achievement or certification supplied. Local draft placeholder."
-    ],
-    "credential": []
-  },
-  {
-    "title": [
-      "MISSING"
-    ],
-    "company_name": "Verified credential pending 3",
-    "icon": "/assets/personalization/missing.svg",
-    "iconBg": "#383E56",
-    "date": "MISSING",
-    "points": [
-      "MISSING — no verified achievement or certification supplied. Local draft placeholder."
-    ],
-    "credential": []
-  },
-  {
-    "title": [
-      "MISSING"
-    ],
-    "company_name": "Verified credential pending 4",
-    "icon": "/assets/personalization/missing.svg",
-    "iconBg": "#383E56",
-    "date": "MISSING",
-    "points": [
-      "MISSING — no verified achievement or certification supplied. Local draft placeholder."
-    ],
-    "credential": []
-  }
-];
+const achievements = [];
 
-const testimonials = [
-  {
-    "testimonial": "MISSING — no verified testimonial supplied. Local draft placeholder, not an endorsement.",
-    "name": "MISSING 1",
-    "designation": "MISSING",
-    "company": "MISSING",
-    "image": "/assets/personalization/avatar.svg"
-  },
-  {
-    "testimonial": "MISSING — no verified testimonial supplied. Local draft placeholder, not an endorsement.",
-    "name": "MISSING 2",
-    "designation": "MISSING",
-    "company": "MISSING",
-    "image": "/assets/personalization/avatar.svg"
-  },
-  {
-    "testimonial": "MISSING — no verified testimonial supplied. Local draft placeholder, not an endorsement.",
-    "name": "MISSING 3",
-    "designation": "MISSING",
-    "company": "MISSING",
-    "image": "/assets/personalization/avatar.svg"
-  }
-];
+const testimonials = [];
 
 const projects = [
   {
