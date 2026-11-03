@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Caveat:wght@500;700&family=VT323&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Scrapbook / lined-notebook base ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  /* overflow-x: clip keeps sticky positioning working (unlike hidden) */
+  overflow-x: clip;
+}
+
+body {
+  background-color: #f6f1e3;
+  color: #161513;
+  font-family:
+    ui-monospace,
+    "SF Mono",
+    "Cascadia Code",
+    Menlo,
+    Consolas,
+    monospace;
+  overflow-x: clip;
+}
+
+::selection {
+  background: #ffd23f;
+  color: #161513;
+}
+
+/* Lined paper: blue rules every 32px + a red margin line on wide screens */
+.paper-bg {
+  background-color: #f6f1e3;
+  background-image:
+    linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 60px,
+      rgba(255, 107, 94, 0.35) 60px,
+      rgba(255, 107, 94, 0.35) 62px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      transparent 0,
+      transparent 31px,
+      rgba(125, 160, 220, 0.35) 31px,
+      rgba(125, 160, 220, 0.35) 32px
+    );
+  background-attachment: local;
+}
+
+@media (max-width: 640px) {
+  .paper-bg {
+    background-image: repeating-linear-gradient(
+      transparent 0,
+      transparent 31px,
+      rgba(125, 160, 220, 0.35) 31px,
+      rgba(125, 160, 220, 0.35) 32px
+    );
+  }
+}
+
+.hash-span {
+  margin-top: -90px;
+  padding-bottom: 90px;
+  display: block;
+}
+
+/* ---- Scrapbook pieces ---- */
+
+/* Coloured tape strip (place inside a relative parent) */
+.tape {
+  position: absolute;
+  width: 110px;
+  height: 28px;
+  background: rgba(255, 210, 63, 0.6);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  transform: rotate(-4deg);
+  z-index: 10;
+  pointer-events: none;
+}
+.tape-pink {
+  background: rgba(255, 179, 209, 0.65);
+}
+.tape-blue {
+  background: rgba(124, 196, 255, 0.6);
+}
+.tape-green {
+  background: rgba(139, 226, 139, 0.6);
+}
+
+/* Polaroid frame for real screenshots */
+.polaroid {
+  background: #fffdf6;
+  border: 2px solid #161513;
+  box-shadow: 6px 6px 0 #161513;
+  padding: 12px 12px 8px;
+}
+.polaroid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid #161513;
+  object-fit: cover;
+}
+.polaroid figcaption {
+  font-family: "Caveat", cursive;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 6px;
+}
+
+/* Outlined display text (watermarks, second hero line) */
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 2px #161513;
+}
+.outline-text-faint {
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(22, 21, 19, 0.22);
+}
+
+/* Hard offset shadows */
+.shadow-hard {
+  box-shadow: 6px 6px 0 #161513;
+}
+.shadow-hard-sm {
+  box-shadow: 4px 4px 0 #161513;
+}
+
+/* Sticky project blocks: each block sticks to the top of the viewport
+   until the next one scrolls over it. Parents must keep overflow visible. */
+.project-block {
+  position: sticky;
+  top: 0;
+  min-height: 100svh;
+}
+
+/* Horizontal "notes from the build" scroller */
+.notes-row {
+  scrollbar-width: thin;
+  scrollbar-color: #161513 #f6f1e3;
+}
+.notes-row::-webkit-scrollbar {
+  height: 8px;
+}
+.notes-row::-webkit-scrollbar-track {
+  background: #f6f1e3;
+  border: 2px solid #161513;
+}
+.notes-row::-webkit-scrollbar-thumb {
+  background: #161513;
+}
+
+/* Small wiggle for sticker labels */
+@keyframes sticker-wiggle {
+  0%,
+  100% {
+    transform: rotate(var(--sticker-rotate, 0deg));
+  }
+  50% {
+    transform: rotate(calc(var(--sticker-rotate, 0deg) + 1.2deg));
+  }
+}
+.sticker:hover {
+  animation: sticker-wiggle 0.4s ease-in-out;
+}
+
+/* ---- Motion polish ---- */
+
+/* Scrolling keyword ticker (seamless loop: track holds the list twice) */
+@keyframes marquee-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  animation: marquee-x 32s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Gentle float for hero doodles */
+@keyframes float-y {
+  from {
+    transform: translateY(0) rotate(12deg);
+  }
+  to {
+    transform: translateY(-8px) rotate(12deg);
+  }
+}
+@keyframes float-y-rev {
+  from {
+    transform: translateY(0) rotate(-12deg);
+  }
+  to {
+    transform: translateY(-8px) rotate(-12deg);
+  }
+}
+.float-slow {
+  animation: float-y 5s ease-in-out infinite alternate;
+}
+.float-slow-rev {
+  animation: float-y-rev 6s ease-in-out infinite alternate;
+}
+
+/* Bounce for the hero scroll cue */
+@keyframes cue-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+.cue-bounce {
+  animation: cue-bounce 1.6s ease-in-out infinite;
+}
+
+/* Polaroid: lift + straighten on hover (inline rotate is beaten by !important) */
+.polaroid {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease;
+}
+.polaroid:hover {
+  transform: rotate(0deg) translateY(-6px) !important;
+  box-shadow: 10px 12px 0 #161513;
+}
+
+/* "Notes from the build" cards: small lift on hover */
+.note-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.note-card:hover {
+  transform: translateY(-4px) rotate(-0.5deg);
+  box-shadow: 10px 10px 0 #161513;
+}
+
+/* Respect reduced-motion: kill the decorative loops, keep content static */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track,
+  .float-slow,
+  .float-slow-rev,
+  .cue-bounce,
+  .sticker:hover {
+    animation: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
