@@ -12,11 +12,11 @@ frames. The design and layout are inspired by the current
 [jayant.codes](https://jayant.codes/) scrapbook redesign — the look only.
 Every word, project and screenshot here is Omkar's own.
 
-This branch (`feat/scrapbook-redesign`) replaces the earlier dark 3D design
+The scrapbook design on `main` replaces the earlier dark 3D design
 (PR #1, superseded and not merged). The 3D scenes, Spline keyboard and Earth
 globe are gone; the site is plain React + Tailwind, so it renders anywhere
 without WebGL, Draco decoders or external 3D runtimes. The only external
-runtime dependency is Google Fonts (Silkscreen + Caveat), which fall back to
+runtime dependency is Google Fonts (VT323 + Caveat), which fall back to
 monospace/cursive when offline.
 
 ## Selected projects
@@ -53,7 +53,6 @@ and model attribution notices remain intact. See [asset provenance](ASSET_SOURCE
 ```bash
 git clone https://github.com/omkark2404/Omkar-portfolio-.git
 cd Omkar-portfolio-
-git checkout feat/scrapbook-redesign
 npm ci
 npm run dev
 ```
