@@ -21,17 +21,19 @@ const item = {
 /**
  * Hero in the style of Jayant's current homepage (jayant.codes), with
  * Omkar's own words and photos. Name is OMKAR only — no Kumar in the
- * display name. The two circle photos are placeholders ("OK") until
- * Omkar sends his own two photos; never use Jayant's photos here.
+ * display name. The two circle photos are Omkar's own (balcony profile
+ * and bike in the snow); never use Jayant's photos here.
  */
-const PhotoCircle = ({ className }) => (
+const PhotoCircle = ({ src, alt, position, className }) => (
   <div
-    aria-label="Photo placeholder — Omkar's photo goes here"
-    className={`flex items-center justify-center overflow-hidden rounded-full border-[3px] border-[#ff5a1f] bg-[#fffdf6] shadow-hard-sm ${className || ""}`}
+    className={`overflow-hidden rounded-full border-[3px] border-[#ff5a1f] bg-[#fffdf6] shadow-hard-sm ${className || ""}`}
   >
-    <span className="font-pixel text-3xl font-bold text-ink/70 sm:text-4xl">
-      OK
-    </span>
+    <img
+      src={src}
+      alt={alt}
+      style={{ objectPosition: position || "50% 40%" }}
+      className="h-full w-full object-cover"
+    />
   </div>
 );
 
@@ -174,8 +176,18 @@ const Hero = () => {
           variants={item}
           className="mt-8 flex justify-center gap-8 xl:hidden"
         >
-          <PhotoCircle className="h-20 w-20 sm:h-24 sm:w-24" />
-          <PhotoCircle className="h-20 w-20 sm:h-24 sm:w-24" />
+          <PhotoCircle
+            src="/assets/omkar-bike.jpg"
+            alt="Omkar Kumar standing with his Royal Enfield in the snow"
+            position="50% 25%"
+            className="h-20 w-20 sm:h-24 sm:w-24"
+          />
+          <PhotoCircle
+            src="/assets/omkar-balcony.jpg"
+            alt="Omkar Kumar looking out at the mountains from a balcony"
+            position="50% 40%"
+            className="h-20 w-20 sm:h-24 sm:w-24"
+          />
         </motion.div>
 
         {/* Statement, flanked by the photo circles on wide screens */}
@@ -184,13 +196,23 @@ const Hero = () => {
             variants={item}
             className="absolute -left-44 top-1/2 hidden -translate-y-1/2 xl:block"
           >
-            <PhotoCircle className="h-32 w-32" />
+            <PhotoCircle
+              src="/assets/omkar-bike.jpg"
+              alt="Omkar Kumar standing with his Royal Enfield in the snow"
+              position="50% 25%"
+              className="h-32 w-32"
+            />
           </motion.div>
           <motion.div
             variants={item}
             className="absolute -right-44 top-1/2 hidden -translate-y-1/2 xl:block"
           >
-            <PhotoCircle className="h-32 w-32" />
+            <PhotoCircle
+              src="/assets/omkar-balcony.jpg"
+              alt="Omkar Kumar looking out at the mountains from a balcony"
+              position="50% 40%"
+              className="h-32 w-32"
+            />
           </motion.div>
 
           <motion.p
@@ -225,6 +247,17 @@ const Hero = () => {
               ↗
             </span>
             CONTACT ME
+          </a>
+          <a
+            href="/Omkar_Kumar_Resume_BA.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 border-2 border-ink bg-white px-6 py-3.5 font-mono text-sm font-bold tracking-widest text-ink shadow-hard transition-transform hover:-translate-y-0.5 active:translate-y-0 active:shadow-hard-sm"
+          >
+            <span className="flex h-6 w-6 items-center justify-center bg-noteyellow font-display text-base font-black text-ink">
+              ↓
+            </span>
+            RESUME
           </a>
         </motion.div>
 
