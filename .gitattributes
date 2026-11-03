@@ -1,0 +1,2 @@
+# Historical templates are byte-exact inputs, not active application source.
+personalization/baseline/** -text -diff
