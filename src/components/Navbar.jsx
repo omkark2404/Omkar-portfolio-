@@ -97,6 +97,8 @@ const Navbar = () => {
             type="button"
             onClick={() => setOpen((v) => !v)}
             aria-label="Toggle menu"
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
             className="flex h-9 w-9 flex-col items-center justify-center gap-1 border-2 border-ink bg-noteyellow shadow-hard-sm md:hidden"
           >
             <span className="h-0.5 w-5 bg-ink" />
@@ -108,7 +110,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {open && (
-        <ul className="border-t-2 border-ink bg-paper px-4 py-2 md:hidden">
+        <ul id="mobile-navigation" className="border-t-2 border-ink bg-paper px-4 py-2 md:hidden">
           {LINKS.map((link) => (
             <li key={link.id}>
               <a

@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  background-color: #f6f1e3;
+  background-color: #fbfaf6;
   color: #161513;
   font-family:
     ui-monospace,
@@ -43,21 +43,21 @@ body {
 
 /* Lined paper: blue rules every 32px + a red margin line on wide screens */
 .paper-bg {
-  background-color: #f6f1e3;
+  background-color: #fbfaf6;
   background-image:
     linear-gradient(
       90deg,
       transparent 0,
       transparent 60px,
-      rgba(255, 107, 94, 0.35) 60px,
-      rgba(255, 107, 94, 0.35) 62px,
+      rgba(235, 146, 125, 0.2) 60px,
+      rgba(235, 146, 125, 0.2) 62px,
       transparent 62px
     ),
     repeating-linear-gradient(
       transparent 0,
       transparent 31px,
-      rgba(125, 160, 220, 0.35) 31px,
-      rgba(125, 160, 220, 0.35) 32px
+      rgba(115, 126, 145, 0.18) 31px,
+      rgba(115, 126, 145, 0.18) 32px
     );
   background-attachment: local;
 }
@@ -67,8 +67,8 @@ body {
     background-image: repeating-linear-gradient(
       transparent 0,
       transparent 31px,
-      rgba(125, 160, 220, 0.35) 31px,
-      rgba(125, 160, 220, 0.35) 32px
+      rgba(115, 126, 145, 0.18) 31px,
+      rgba(115, 126, 145, 0.18) 32px
     );
   }
 }
@@ -270,4 +270,79 @@ body {
   html {
     scroll-behavior: auto;
   }
+}
+
+/* Keep the name and its four annotations in a single responsive composition. */
+.portfolio-hero { padding: 116px 24px 44px; }
+.hero-identity { position: relative; width: min(100%, 880px); height: 270px; margin: 0 auto; }
+.hero-intro { position: absolute; top: 0; left: 50%; transform: translateX(-50%); font-size: 26px; line-height: 1; white-space: nowrap; }
+.hero-intro svg { display: block; width: 65px; height: 12px; margin: 5px auto 0; }
+.hero-name { position: absolute; top: 64px; left: 50%; transform: translateX(-50%); width: 440px; padding: 9px 24px 15px; border: 2px solid #ff652f; border-radius: 49% 2% 45% 2% / 5% 48% 5% 48%; text-align: center; font-size: 144px; font-weight: 400; line-height: 1; letter-spacing: -3px; }
+.hero-pill { position: absolute; top: 25px; padding: 8px 14px; border: 2px solid #fffdf8; border-radius: 30px; box-shadow: 0 4px 9px #16151324; font-size: 10px; font-weight: 700; letter-spacing: 1px; white-space: nowrap; }
+.hero-pill-left { left: 30px; background: #cbbbff; transform: rotate(-6deg); }
+.hero-pill-right { right: 30px; background: #f5e5aa; transform: rotate(6deg); }
+.hero-role { position: absolute; top: 228px; font-family: "Caveat", cursive; font-size: 22px; white-space: nowrap; }
+.hero-role > span { display: block; padding: 5px 15px 7px; background: #ffd34c; box-shadow: 0 4px 8px #16151320; }
+.hero-role-left { left: 27px; transform: rotate(-4deg); }
+.hero-role-right { right: 27px; transform: rotate(3deg); }
+.hero-role-right > span { background: #a8ddc6; }
+.hero-role-arrow { position: absolute; right: -40px; top: -28px; width: 38px; height: 34px; }
+.hero-role-right .hero-role-arrow { left: -40px; right: auto; transform: scaleX(-1); }
+.hero-availability { margin: 17px auto 0; text-align: center; font-size: 11px; font-weight: 700; line-height: 1.8; letter-spacing: 1.3px; }
+.hero-availability p + p { color: #5c5952; font-size: 10px; }
+.availability-dot { display: inline-block; width: 8px; height: 8px; margin-right: 8px; border-radius: 50%; background: #315de2; }
+.hero-statement-wrap { position: relative; max-width: 1120px; margin: 42px auto 0; text-align: center; }
+.hero-statement { max-width: 810px; margin: auto; font-size: clamp(28px, 3.7vw, 48px); line-height: 1.14; letter-spacing: -1.8px; font-weight: 700; }
+.hero-statement > span { display: block; }
+.hero-highlight { background: linear-gradient(transparent 70%, #ffdc71 70%, #ffdc71 95%, transparent 95%); }
+.hero-flower { display: inline-block; margin-left: 10px; font-size: .8em; color: #d94786; vertical-align: middle; }
+.hero-photo { position: absolute; top: 22px; width: 104px; height: 104px; object-fit: cover; border: 5px solid #ff713d; border-radius: 50%; box-shadow: 0 6px 14px #16151319; }
+.hero-photo-left { left: 0; transform: rotate(-8deg); }
+.hero-photo-right { right: 0; transform: rotate(8deg); }
+.hero-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+.hero-button { display: inline-flex; align-items: center; gap: 12px; padding: 10px 17px 10px 10px; min-height: 48px; border: 1.5px solid #161513; background: #fffdf8; font-size: 12px; font-weight: 700; letter-spacing: 1px; transition: transform .2s, box-shadow .2s; }
+.hero-button-primary { color: #fffdf8; background: #161513; }
+.hero-button > span { display: grid; place-items: center; width: 30px; height: 30px; background: #ffd34c; color: #161513; font-size: 18px; }
+.hero-button-primary > span { background: #315de2; color: white; }
+.hero-button:hover { transform: translateY(-3px); box-shadow: 3px 4px 0 #16151324; }
+.hero-scroll { display: flex; align-items: center; justify-content: center; gap: 9px; width: fit-content; margin: 26px auto 0; font-size: 21px; color: #666057; }
+a:focus-visible, button:focus-visible { outline: 3px solid #315de2; outline-offset: 5px; }
+section[id] { scroll-margin-top: 76px; }
+@media (max-width: 1100px) {
+  .hero-photo { width: 76px; height: 76px; top: 35px; }
+  .hero-statement { max-width: 76%; }
+}
+@media (max-width: 760px) {
+  .portfolio-hero { padding: 104px 18px 36px; }
+  .hero-identity { max-width: 560px; height: 280px; }
+  .hero-intro { font-size: 23px; }
+  .hero-pill { top: 51px; font-size: 8px; padding: 6px 9px; letter-spacing: .5px; }
+  .hero-pill-left { left: 0; }
+  .hero-pill-right { right: 0; }
+  .hero-name { top: 106px; width: 310px; font-size: 104px; padding: 5px 14px 10px; }
+  .hero-role { top: 246px; font-size: 19px; }
+  .hero-role-left { left: 2%; }
+  .hero-role-right { right: 2%; }
+  .hero-role > span { padding: 4px 10px 6px; }
+  .hero-role-arrow { width: 26px; height: 26px; top: -24px; right: -18px; }
+  .hero-role-right .hero-role-arrow { left: -18px; }
+  .hero-availability { margin-top: 25px; font-size: 9px; letter-spacing: .65px; }
+  .hero-availability p + p { font-size: 8px; }
+  .hero-statement-wrap { margin-top: 28px; }
+  .hero-statement { max-width: 100%; font-size: clamp(24px, 5.7vw, 40px); letter-spacing: -1px; }
+  .hero-photo { position: static; display: inline-block; width: 58px; height: 58px; border-width: 3px; margin-bottom: 18px; }
+  .hero-photo-right { display: none; }
+  .hero-actions { margin-top: 25px; gap: 10px; }
+  .hero-button { font-size: 10px; padding-right: 12px; gap: 8px; }
+  .project-block { position: relative; min-height: auto; }
+  .project-block > div { min-height: auto; }
+}
+@media (max-width: 360px) {
+  .hero-name { width: 270px; font-size: 94px; }
+  .hero-pill { font-size: 7px; letter-spacing: .3px; }
+  .hero-role { font-size: 17px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+  .project-block { position: relative; }
 }
