@@ -346,3 +346,29 @@ section[id] { scroll-margin-top: 76px; }
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
   .project-block { position: relative; }
 }
+
+/* A cursor-following negative lens, like the reference's selection box.
+   Difference blending inverts the actual content underneath, without duplicating text. */
+.hero-identity { background-color: transparent; }
+.hero-cursor-lens {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 160px;
+  height: 160px;
+  z-index: 5;
+  background: #fff;
+  border: 1px solid #aaa;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transition: opacity 140ms ease;
+  will-change: transform;
+}
+.hero-cursor-lens i { position: absolute; width: 5px; height: 5px; background: #fff; border: 1px solid #777; }
+.hero-cursor-lens i:nth-child(1) { top: -3px; left: -3px; }
+.hero-cursor-lens i:nth-child(2) { top: -3px; right: -3px; }
+.hero-cursor-lens i:nth-child(3) { bottom: -3px; left: -3px; }
+.hero-cursor-lens i:nth-child(4) { bottom: -3px; right: -3px; }
+@media (hover: none), (pointer: coarse) {
+  .hero-cursor-lens { display: none; }
+}

@@ -1,5 +1,5 @@
-import React from "react";
-import { motion, useReducedMotion } from "framer-motion";
+import React, { useState } from "react";
+import { motion, useReducedMotion, useMotionValue, useSpring } from "framer-motion";
 import { FaArrowDown } from "react-icons/fa";
 import { LINKEDIN_URL } from "../constants";
 
@@ -11,10 +11,35 @@ const Arrow = () => (
 
 const Hero = () => {
   const reduceMotion = useReducedMotion();
+  const [lensVisible, setLensVisible] = useState(false);
+  const pointerX = useMotionValue(0);
+  const pointerY = useMotionValue(0);
+  const lensX = useSpring(pointerX, { stiffness: 550, damping: 40 });
+  const lensY = useSpring(pointerY, { stiffness: 550, damping: 40 });
+  const moveLens = (event) => {
+    if (event.pointerType === "touch" || !window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+    const bounds = event.currentTarget.getBoundingClientRect();
+    const x = event.clientX - bounds.left - 80;
+    const y = event.clientY - bounds.top - 80;
+    if (!lensVisible) {
+      lensX.jump(x);
+      lensY.jump(y);
+    }
+    pointerX.set(x);
+    pointerY.set(y);
+    setLensVisible(true);
+  };
   return (
     <section id="hero" className="portfolio-hero">
       <motion.div initial={reduceMotion ? false : { opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.45 }}>
-        <div className="hero-identity">
+        <div className="hero-identity" onPointerMove={moveLens} onPointerLeave={() => setLensVisible(false)} onPointerCancel={() => setLensVisible(false)}>
+          <motion.div
+            className="hero-cursor-lens"
+            aria-hidden="true"
+            style={{ x: reduceMotion ? pointerX : lensX, y: reduceMotion ? pointerY : lensY, opacity: lensVisible ? 1 : 0 }}
+          >
+            <i /><i /><i /><i />
+          </motion.div>
           <p className="hero-intro font-hand">my name is
             <svg viewBox="0 0 80 12" fill="none" aria-hidden="true"><path d="M3 5Q38 0 77 5M12 10Q38 6 67 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>
           </p>
