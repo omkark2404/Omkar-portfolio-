@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectDetail from "./components/ProjectDetail";
 import { MotionConfig } from "framer-motion";
 
 import {
@@ -15,6 +16,8 @@ import {
 } from "./components";
 
 const App = () => {
+  const projectName = new URLSearchParams(window.location.search).get("project");
+  if (projectName) return <ProjectDetail name={projectName} />;
   return (
     <MotionConfig reducedMotion="user">
       <div className="paper-bg min-h-screen text-ink">
