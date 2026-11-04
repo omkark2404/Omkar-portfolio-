@@ -475,3 +475,13 @@ section[id] { scroll-margin-top: 76px; }
 .case-footer { display:flex; align-items:center; flex-wrap:wrap; gap:20px; }
 .case-footer > div { margin-right:auto; }
 @media(max-width:760px) { .case-hero { grid-template-columns:1fr; padding:48px 24px; gap:40px; } .case-cover { max-width:480px; } .case-nav { padding:20px; } .case-nav span { display:none; } .case-section { grid-template-columns:1fr; gap:12px; } .case-section, .case-approach, .case-evidence, .case-footer { padding:40px 24px; } .case-feature-grid { grid-template-columns:1fr; } .case-jump { gap:16px; } .case-jump > span { width:100%; } .case-evidence { border-radius:0; } }
+
+/* Align project identity and summary like the context section. */
+.case-hero { max-width:1200px; grid-template-columns:1fr 1.4fr; gap:60px; align-items:start; }
+.case-heading h1 { font-size:clamp(38px,4.4vw,64px); overflow-wrap:anywhere; }
+.case-hero-description { padding-top:4px; min-width:0; }
+.case-lead { max-width:none; }
+@media(max-width:760px) {
+  .case-hero { grid-template-columns:1fr; gap:20px; }
+  .case-heading h1 { margin-bottom:0; }
+}
