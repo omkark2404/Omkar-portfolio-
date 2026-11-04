@@ -310,20 +310,15 @@ export const projectExtras = {
 // Technology stack, grouped. Resume-stated or project-verified only.
 // No percentages or proficiency ratings.
 export const skillGroups = [
-  {
-    heading: "BUSINESS ANALYSIS",
-    items: ["Requirements gathering", "Stakeholder communication", "Process improvement", "KPI reporting", "Data visualisation", "Power BI", "Excel", "SAP"],
-  },
-  {
-    heading: "AI/ML",
-    items: ["Machine learning", "scikit-learn", "Model evaluation", "Time-series forecasting", "Anomaly detection", "OCR", "PaddleOCR", "OpenCV", "OR-Tools"],
-  },
-  {
-    heading: "LANGUAGES & DATA",
-    items: ["Python", "SQL", "pandas", "SciPy", "Data cleaning & validation", "Funnel analysis", "Statistical analysis", "MySQL", "PostgreSQL", "SQLite"],
-  },
-  {
-    heading: "DEVELOPMENT & TOOLS",
-    items: ["FastAPI", "Flask", "REST APIs", "React", "Next.js", "Socket.IO", "WebRTC", "Monaco", "Docker", "Git", "GitHub"],
-  },
+  { heading: "BUSINESS ANALYSIS", items: ["Requirements gathering", "Stakeholder communication", "KPI reporting", "Power BI", "Excel"] },
+  { heading: "AI/ML", items: ["Machine learning", "scikit-learn", "Model evaluation", "Forecasting", "OCR"] },
+  { heading: "LANGUAGES & DATA", items: ["Python", "SQL", "pandas", "Data validation", "Statistical analysis"] },
+  { heading: "DEVELOPMENT & TOOLS", items: ["FastAPI", "REST APIs", "Git", "Docker"] },
 ];
+export const projectCovers = {
+  "FinOps Copilot": "/assets/projects/finops-linkedin.jpg",
+  "Pathfinder": "/assets/projects/pathfinder-linkedin.jpg",
+  "FraudLens-AI": "/assets/projects/fraudlens-linkedin.jpg",
+  "CodeFusion": "/assets/projects/codefusion-linkedin.jpg",
+  "Ecommerce Funnel Analytics": "/assets/projects/ecommerce-linkedin.jpg",
+};

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
-import { projectExtras, projects } from "../constants";
+import { projectExtras, projects, projectCovers } from "../constants";
 import Reveal from "./Reveal";
 
 const ProjectBlock = ({ project, index, dimmed }) => {
@@ -86,9 +86,9 @@ const ProjectBlock = ({ project, index, dimmed }) => {
             style={{ top: "-14px", left: "50%", marginLeft: "-55px" }}
           />
           <a href={`?project=${encodeURIComponent(project.name)}`} target="_blank" rel="noopener noreferrer" aria-label={`Read about ${project.name} (opens in a new tab)`} className="block focus-visible:outline focus-visible:outline-4 focus-visible:outline-blue-600">
-          <img src={project.image} alt={`${project.name}: ${extra.caption || "application overview"}`} loading="lazy" />
+          <img src={projectCovers[project.name] || project.image} alt={`${project.name} — illustrative LinkedIn project cover`} loading="lazy" />
           </a>
-          <figcaption>{extra.caption || project.name}</figcaption>
+          <figcaption>{project.name} · illustrative project cover</figcaption>
         </figure>
       </motion.div>
     </article>
