@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { projects, projectExtras, projectCovers } from "../constants";
+import { projects, projectExtras } from "../constants";
 const themes = ["Cloud cost intelligence", "Delivery decision support", "Document intelligence", "Real-time collaboration", "Product & funnel analytics"];
 export default function ProjectDetail({ name }) {
   const index = projects.findIndex(p => p.name === name);
@@ -13,7 +13,6 @@ export default function ProjectDetail({ name }) {
     <main>
       <section className="case-hero">
         <div className="case-heading"><p className="case-eyebrow">PROJECT 0{index+1} · {themes[index]}</p><h1>{name}</h1><p className="case-lead">{extra.intro}</p><div className="case-actions"><a className="case-primary" href={project.source_code_link} target="_blank" rel="noopener noreferrer">Explore the code ↗</a>{project.live_demo_link && <a href={project.live_demo_link} target="_blank" rel="noopener noreferrer">Try the demo ↗</a>}</div><div className="case-tags">{project.tags.map(t=><span key={t.name}>{t.name}</span>)}</div></div>
-        <figure className="case-cover"><span className="case-tape"/><img src={projectCovers[name]} alt={`${name} illustrative project cover from LinkedIn`}/><figcaption>PROJECT ARTWORK · ILLUSTRATIVE, NOT MEASURED RESULTS</figcaption></figure>
       </section>
       <nav className="case-jump" aria-label="On this page"><span>INSIDE THE PROJECT</span><a href="#overview">01 Overview</a><a href="#approach">02 Approach</a><a href="#evidence">03 Evidence</a></nav>
       <section id="overview" className="case-section"><div><p className="case-eyebrow">01 / THE CONTEXT</p><h2>From a problem<br/>to a prototype.</h2></div><p className="case-body">{project.description}</p></section>
