@@ -36,7 +36,10 @@ const Hero = () => {
           <motion.div
             className="hero-cursor-lens"
             aria-hidden="true"
-            style={{ x: reduceMotion ? pointerX : lensX, y: reduceMotion ? pointerY : lensY, opacity: lensVisible ? 1 : 0 }}
+            initial={false}
+            animate={{ opacity: lensVisible ? 1 : 0, scale: lensVisible ? 1 : 0.65 }}
+            transition={{ duration: reduceMotion ? 0 : 0.28, ease: [0.22, 1, 0.36, 1] }}
+            style={{ x: reduceMotion ? pointerX : lensX, y: reduceMotion ? pointerY : lensY }}
           >
             <i /><i /><i /><i />
           </motion.div>

@@ -12,24 +12,19 @@ const ProjectBlock = ({ project, index, dimmed }) => {
 
   return (
     <article
-      className="project-block overflow-hidden border-y-2 border-ink"
-      style={{ backgroundColor: bg }}
+      className="project-block"
+      style={{ "--project-color": bg, "--project-index": index, zIndex: index + 1 }}
     >
-      {/* Giant outlined watermark */}
-      <span
-        aria-hidden="true"
-        className="outline-text-faint pointer-events-none absolute -top-2 left-0 select-none whitespace-nowrap font-pixel text-[clamp(3rem,11vw,9rem)] font-bold leading-none"
-      >
-        FEATURED PROJECTS
-      </span>
+      <div className="project-folder-tab"><span aria-hidden="true">✦</span> PROJECT {number}</div>
+      <div className="project-folder-surface" aria-hidden="true" />
 
       <motion.div
         animate={{
-          scale: dimmed ? 0.94 : 1,
-          opacity: dimmed ? 0.5 : 1,
+          scale: dimmed ? 0.97 : 1,
+          opacity: dimmed ? 0.85 : 1,
         }}
-        transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-        className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-center gap-8 px-4 py-24 sm:px-8 lg:flex-row lg:items-center lg:gap-12"
+        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        className="project-content relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-center gap-8 px-4 py-24 sm:px-8 lg:flex-row lg:items-center lg:gap-12"
       >
         <div className="max-w-2xl">
           <p className="font-mono text-[13px] font-bold tracking-[0.25em] text-ink">
@@ -104,7 +99,7 @@ const Works = () => {
       const blocks = document.querySelectorAll(".project-block");
       let current = 0;
       blocks.forEach((b, i) => {
-        if (b.getBoundingClientRect().top <= 1) current = i;
+        if (b.getBoundingClientRect().top <= 81) current = i;
       });
       setActiveIndex(current);
     };

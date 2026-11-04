@@ -361,7 +361,7 @@ section[id] { scroll-margin-top: 76px; }
   border: 1px solid #aaa;
   mix-blend-mode: difference;
   pointer-events: none;
-  transition: opacity 140ms ease;
+  transform-origin: center;
   will-change: transform;
 }
 .hero-cursor-lens i { position: absolute; width: 5px; height: 5px; background: #fff; border: 1px solid #777; }
@@ -371,4 +371,52 @@ section[id] { scroll-margin-top: 76px; }
 .hero-cursor-lens i:nth-child(4) { bottom: -3px; right: -3px; }
 @media (hover: none), (pointer: coarse) {
   .hero-cursor-lens { display: none; }
+}
+
+/* Folder tabs stay visible while the following project slides over the sheet. */
+.project-block {
+  top: 80px;
+  min-height: calc(100svh - 80px);
+  padding-top: 36px;
+  background: transparent;
+}
+.project-folder-tab {
+  position: absolute;
+  top: 0;
+  left: calc(24px + var(--project-index) * 142px);
+  width: 148px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--project-color);
+  clip-path: polygon(16% 0, 79% 0, 100% 100%, 0 100%);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+.project-folder-surface {
+  position: absolute;
+  inset: 36px 0 0;
+  background: var(--project-color);
+  border-top: 1px solid #16151340;
+  box-shadow: 0 -12px 32px #16151312;
+  pointer-events: none;
+}
+.project-block .project-content {
+  min-height: calc(100svh - 116px);
+  padding-top: 64px;
+  padding-bottom: 64px;
+  transform-origin: center top;
+}
+@media (max-width: 760px), (max-height: 650px) {
+  .project-block { position: relative; top: auto; min-height: auto; margin-top: 24px; }
+  .project-folder-tab { left: 16px; }
+  .project-block .project-content { min-height: auto; padding-top: 40px; padding-bottom: 48px; opacity: 1 !important; transform: none !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-block { position: relative; top: auto; }
+  .project-block .project-content { opacity: 1 !important; transform: none !important; }
 }
