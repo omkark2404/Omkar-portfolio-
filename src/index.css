@@ -26,13 +26,7 @@ html {
 body {
   background-color: #fbfaf6;
   color: #161513;
-  font-family:
-    ui-monospace,
-    "SF Mono",
-    "Cascadia Code",
-    Menlo,
-    Consolas,
-    monospace;
+  font-family: Arial, Helvetica, sans-serif;
   overflow-x: clip;
 }
 
@@ -420,3 +414,19 @@ section[id] { scroll-margin-top: 76px; }
   .project-block { position: relative; top: auto; }
   .project-block .project-content { opacity: 1 !important; transform: none !important; }
 }
+
+/* Recruiter-facing reading hierarchy; decorative type stays on labels. */
+.hero-role-summary { margin: 20px auto 0; text-align: center; font-size: 15px; font-weight: 600; }
+.hero-role-summary span { display: block; margin-top: 6px; font-size: 12px; color: #5c5952; font-weight: 400; }
+.hero-availability { margin-top: 12px; }
+.project-details { max-width: 36rem; font-size: 14px; line-height: 1.65; }
+.project-details summary { cursor: pointer; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; padding: 4px 0; }
+.project-details ul { list-style: disc; padding-left: 20px; margin-top: 12px; }
+.project-details li + li { margin-top: 5px; }
+.project-details p { margin-top: 12px; padding-left: 12px; border-left: 2px solid #16151350; }
+.project-details summary:focus-visible { outline: 3px solid #315de2; outline-offset: 4px; }
+.skip-link { position: fixed; top: -100px; left: 16px; z-index: 100; padding: 12px 18px; background: #161513; color: white; }
+.skip-link:focus { top: 10px; }
+#about p, #experience li, .project-content p { text-wrap: pretty; }
+@media (max-width: 760px) { .hero-role-summary { font-size: 13px; margin-top: 28px; } }
+.hero-pill, .hero-availability, .hero-button, .project-folder-tab { font-family: ui-monospace, 'Courier New', monospace; }

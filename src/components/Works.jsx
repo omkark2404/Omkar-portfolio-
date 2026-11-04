@@ -37,6 +37,12 @@ const ProjectBlock = ({ project, index, dimmed }) => {
             {extra.intro || project.description}
           </p>
 
+          <details className="project-details mt-5">
+            <summary>Explore approach &amp; limitations</summary>
+            <ul>{project.features.map((feature) => <li key={feature}>{feature}</li>)}</ul>
+            <p>{extra.note}</p>
+          </details>
+
           <div className="mt-5 flex flex-wrap gap-2">
             {project.tags.map((tag) => (
               <span
@@ -79,7 +85,7 @@ const ProjectBlock = ({ project, index, dimmed }) => {
             className="tape"
             style={{ top: "-14px", left: "50%", marginLeft: "-55px" }}
           />
-          <img src={project.image} alt={`${project.name} — real product screenshot`} loading="lazy" />
+          <img src={project.image} alt={`${project.name}: ${extra.caption || "application overview"}`} loading="lazy" />
           <figcaption>{extra.caption || project.name}</figcaption>
         </figure>
       </motion.div>
@@ -120,8 +126,8 @@ const Works = () => {
             FEATURED PROJECTS
           </h2>
           <p className="mt-4 max-w-2xl text-[15px] leading-7 text-ink/85">
-            Five projects, each one a real repository with a real demo where one
-            exists. Scroll — each one sticks around until the next takes over.
+            Five projects across business analysis, applied AI/ML and software.
+            Explore the approach, review the evidence, and open the source.
           </p>
         </Reveal>
       </div>

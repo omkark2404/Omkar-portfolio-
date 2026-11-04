@@ -18,9 +18,10 @@ const App = () => {
   return (
     <MotionConfig reducedMotion="user">
       <div className="paper-bg min-h-screen text-ink">
+        <a className="skip-link" href="#main-content">Skip to content</a>
         <ScrollProgress />
         <Navbar />
-        <main>
+        <main id="main-content" tabIndex={-1}>
           <Hero />
           <Marquee />
           <About />

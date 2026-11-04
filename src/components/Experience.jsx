@@ -47,7 +47,7 @@ const Experience = () => {
                     {exp.location.toUpperCase()}
                   </span>
                 </div>
-                <h3 className="mt-4 font-pixel text-lg font-bold leading-snug text-ink sm:text-xl">
+                <h3 className="mt-4 font-display text-lg font-bold leading-snug text-ink sm:text-xl">
                   {exp.title}
                 </h3>
                 <p className="mt-1 font-mono text-sm font-bold text-ink/80">

@@ -52,6 +52,7 @@ const Hero = () => {
           <div className="hero-role hero-role-left"><span>Business Analyst</span><Arrow /></div>
           <div className="hero-role hero-role-right"><span>AI/ML Engineer</span><Arrow /></div>
         </div>
+        <p className="hero-role-summary">Aspiring Business Analyst &amp; AI/ML Engineer <span>Thapar · Class of 2027</span></p>
         <div className="hero-availability">
           <p><span className="availability-dot" />OPEN TO INTERNSHIPS &amp; FULL-TIME ROLES</p>
           <p>INDIA · OPEN TO HYBRID AND REMOTE WORK</p>

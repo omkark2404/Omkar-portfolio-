@@ -12,8 +12,7 @@ const experiences = [
     date: "May 2026 – Jul 2026",
     iconBg: "#383E56",
     points: [
-      "Worked on AI/ML application development.",
-      "Dataset preparation, output validation and data-quality checks within software and AI/ML workflows.",
+      "Supported AI/ML application development through dataset preparation, output validation and data-quality checks.",
     ],
   },
   {
@@ -23,9 +22,8 @@ const experiences = [
     date: "Jun 2025 – Jul 2025",
     iconBg: "#383E56",
     points: [
-      "Manufacturing performance analysis and SAP-based reporting.",
-      "Operational KPI monitoring (output, rejection levels, machine utilisation, downtime).",
-      "Python/pandas analysis where supported.",
+      "Analysed manufacturing performance and supported SAP-based reporting.",
+      "Monitored operational KPIs including output, rejection levels, machine utilisation and downtime.",
     ],
   },
   {
@@ -35,8 +33,8 @@ const experiences = [
     date: "Jan 2025 – Mar 2026",
     iconBg: "#383E56",
     points: [
-      "Stakeholder requirements gathering from 6+ partner venues.",
-      "Partner feedback and product feature requirements/planning across venue discovery, availability, payments and onboarding.",
+      "Gathered stakeholder requirements from 6+ partner venues.",
+      "Translated partner feedback into feature requirements and planning for venue discovery, availability, payments and onboarding.",
     ],
   },
   {
@@ -269,15 +267,15 @@ export const GITHUB_URL = "https://github.com/omkark2404";
 export const projectExtras = {
   "FinOps Copilot": {
     date: "AUG 2026",
-    color: "#6fb7ff",
+    color: "#dbe9f5",
     intro:
-      "A prototype that explores cloud-billing data, flags anomalies and tests forecasts — and the honest result is the naive baseline won.",
+      "Explore cloud spend, investigate anomaly flags and compare forecasts with simple baselines. A prototype for testing cloud-cost decisions; realised savings are not established.",
     note: "The six-day forecast WAPE was 80.1% and MAE didn't beat the naive baseline. Predictive quality is unproven — saying so matters more than a good-looking chart.",
     caption: "the real FinOps dashboard (synthetic test data)",
   },
   Pathfinder: {
     date: "AUG 2026",
-    color: "#ff6b5e",
+    color: "#f2dfd6",
     intro:
       "A decision prototype that scores delivery-route risk and resequences stops — built on a real 13-route sample plus a synthetic fixture.",
     note: "Synthetic planned-vs-actual data can show the method, but it can't prove real-world accuracy. The demo says so on the screen.",
@@ -285,7 +283,7 @@ export const projectExtras = {
   },
   "FraudLens-AI": {
     date: "JUL 2026",
-    color: "#ffd23f",
+    color: "#f4e9c6",
     intro:
       "A document-processing prototype that extracts fields with OCR and flags anomalies for a human reviewer to check.",
     note: "A heuristic flag is a question for a reviewer, not proof of fraud. That distinction is the whole point of the tool.",
@@ -293,7 +291,7 @@ export const projectExtras = {
   },
   CodeFusion: {
     date: "SEP 2026",
-    color: "#7ed491",
+    color: "#dceadd",
     intro:
       "A collaborative coding platform with shared editing, voice chat and code execution — hosted under the name CodeSync.",
     note: "Real-time editing is easy to demo and hard to get right — last-write-wins still has concurrent-edit limits, and the README keeps the original authorship note.",
@@ -301,7 +299,7 @@ export const projectExtras = {
   },
   "Ecommerce Funnel Analytics": {
     date: "SEP 2026",
-    color: "#c9a7ff",
+    color: "#e6e0f1",
     intro:
       "A MySQL + Python funnel study of 6,000 accounts that finds where users drop off — on data whose origin is unrecorded.",
     note: "The biggest loss was 1,743 accounts between product view and add to cart — but the dataset's source is unrecorded, so the recommendation is a hypothesis to test, not a proven fix.",

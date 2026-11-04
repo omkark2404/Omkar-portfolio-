@@ -36,8 +36,9 @@ const About = () => {
               ecommerce funnels.
             </p>
             <p className="mt-4 max-w-3xl text-[15px] leading-8 text-ink/90 sm:text-base sm:leading-8">
-              I work in Python and SQL, and I&apos;d rather show a result with
-              its caveats attached than a clean number I can&apos;t defend.
+              I use Python and SQL to investigate data, translate findings into
+              practical recommendations, and build applications that support
+              business decisions.
             </p>
           </Reveal>
 
@@ -64,10 +65,7 @@ const About = () => {
                 </div>
               </div>
             ))}
-            <p className="mt-5 font-hand text-xl font-bold text-ink/60">
-              resume-stated or project-verified only — no percentages, no
-              made-up ratings.
-            </p>
+
             </div>
           </Reveal>
         </div>
