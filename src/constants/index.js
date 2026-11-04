@@ -55,7 +55,7 @@ const experiences = [
 const projects = [
   {
     "name": "FinOps Copilot",
-    "description": "A cloud-billing analysis prototype for FOCUS-formatted CSV and Parquet exports. It combines spend exploration, statistical forecasts, anomaly flags and human review, with optional Gemini explanations of numeric evidence. Forecasting uses naive/moving-average baselines, Holt-Winters and eligible LightGBM candidates (no LSTM). In the README evaluation, the six-day forecast WAPE is 80.1% and MAE does not improve on the naive baseline, so predictive quality is unproven. Realised savings are not established.",
+    "description": "A prototype that helps users understand cloud spending, spot unusual charges and explore future costs. It uses Python, SQL and FastAPI to turn billing data into reports and forecasts, with recommendations for a person to review. Testing has not shown better forecasts than a simple baseline, and actual cost savings have not been demonstrated.",
     "tags": [
       {
         "name": "Python",
@@ -86,15 +86,15 @@ const projects = [
     "source_code_link": "https://github.com/omkark2404/finops-copilot",
     "live_demo_link": "https://finops-copilot-eta.vercel.app",
     "features": [
-      "Validate billing exports and retain dataset provenance.",
-      "Explore spend and statistical anomaly flags.",
-      "Compare forecasting candidates (naive/moving-average baselines, Holt-Winters, eligible LightGBM) with simple baselines.",
-      "Review recommendations without changing cloud infrastructure."
+      "Check uploaded billing data before analysis.",
+      "Explore spending patterns and unusual charges.",
+      "Compare forecasts with a simple starting estimate.",
+      "Keep recommendations under human review."
     ]
   },
   {
     "name": "Pathfinder",
-    "description": "A last-mile delivery decision prototype combining route analytics, risk scoring, OR-Tools optimisation and what-if scenarios. Data includes a real 13-route sample of the Amazon Last Mile dataset and a synthetic planned-vs-actual fixture; synthetic results do not establish real-world accuracy or operational impact. Optimisation uses straight-line (Haversine) distance and has no time windows yet. Dispatch decisions stay under human review.",
+    "description": "A prototype that helps delivery teams review routes, identify possible delays and compare different stop orders. Built with Python, machine learning and Google OR-Tools, it explores options for a dispatcher to review. It uses a small real-world sample and simulated data; predictions and savings have not been proven in live operations.",
     "tags": [
       {
         "name": "Python",
@@ -125,16 +125,15 @@ const projects = [
     "source_code_link": "https://github.com/omkark2404/Pathfinder--AI-Powered-Last-Mile-Delivery-Decision-Intelligence",
     "live_demo_link": "https://pathfinder-ai-powered-last-mile-del.vercel.app",
     "features": [
-      "Score route risk 0–100 and compare planned vs actual stop sequences (Kendall Tau).",
-      "Explore route-level delivery risk and deviations.",
-      "Optimise stop sequences with Google OR-Tools.",
-      "Compare resequencing and multi-vehicle scenarios.",
-      "Keep dispatch decisions under human review."
+      "Review routes and possible delivery risks.",
+      "Compare planned routes with what actually happened.",
+      "Use Google OR-Tools to explore different stop orders.",
+      "Keep final delivery decisions with the dispatcher."
     ]
   },
   {
     "name": "FraudLens-AI",
-    "description": "A document-processing prototype using PaddleOCR, image preprocessing and rule-based validation to extract fields and flag quality issues or possible anomalies. Heuristic flags support review; they do not establish that a document is fraudulent. An optional Gemini LLM fallback is available for field extraction.",
+    "description": "A document-processing prototype that uses Python, OCR and OpenCV to read information from images and PDFs and highlight fields that need checking. It helps a reviewer spot missing information or possible inconsistencies. A flagged document is not proof of fraud, and fraud-detection accuracy has not been established.",
     "tags": [
       {
         "name": "Python",
@@ -165,15 +164,15 @@ const projects = [
     "source_code_link": "https://github.com/omkark2404/FraudLens-AI",
     "live_demo_link": "https://fraudlens-ai-6wu4.onrender.com",
     "features": [
-      "Extract fields from document images and PDFs.",
-      "Preprocess images before OCR.",
-      "Separate poor-image quality from heuristic anomalies.",
-      "Process uploads with bounded background threads."
+      "Read text and key details from document images and PDFs.",
+      "Improve image quality before reading the text.",
+      "Highlight unclear text and information that needs checking.",
+      "Track document-processing jobs through a Flask API."
     ]
   },
   {
     "name": "CodeFusion",
-    "description": "A collaborative coding platform with Monaco editing, Socket.IO synchronisation, WebRTC voice and text chat, and external code-execution providers. The live demo is hosted under the name CodeSync. A previous README named Shashank as author; that historical attribution is retained, and the original authorship and the current maintainer's individual contributions need clarification — repository ownership does not establish sole original authorship.",
+    "description": "A collaborative coding prototype that brings shared editing, code execution, voice and text chat into one browser workspace. It uses React, Monaco Editor, Socket.IO and WebRTC. The live demo is called CodeSync. Simultaneous edits can overwrite each other, and code execution depends on external services. The repository retains an earlier author credit; individual contributions still need clarification.",
     "tags": [
       {
         "name": "React",
@@ -204,15 +203,15 @@ const projects = [
     "source_code_link": "https://github.com/omkark2404/CodeFusion",
     "live_demo_link": "https://codesync-clients.onrender.com",
     "features": [
-      "Share code and cursor updates in a browser room.",
-      "Communicate using integrated voice and text chat.",
-      "Request execution through Judge0 and API fallbacks.",
-      "Current last-write-wins editing has concurrent-edit limitations."
+      "Edit code together in a shared browser room.",
+      "Use voice and text chat alongside the editor.",
+      "Run code through connected external services.",
+      "Explore the limits of simultaneous editing."
     ]
   },
   {
     "name": "Ecommerce Funnel Analytics",
-    "description": "An account-level ecommerce funnel analysis using MySQL and reproducible Python-built charts. It covers 6,000 accounts and 19,591 events (Jan–Jul 2023) across signup → login → product view → add to cart → purchase: 1,298 accounts (21.6%) reached purchase, 50.4% of accounts that added to cart completed purchase, and the largest absolute loss — 1,743 accounts — was between product view and add to cart. Median time to first purchase was 3 days. The dataset's original source is unrecorded and its structure suggests a simulated sample, so results demonstrate the method, not a real store. Recommendations are hypotheses to test, not demonstrated improvements.",
+    "description": "An ecommerce analysis project that uses MySQL and Python to understand where users leave the journey from signup to purchase. It compares customer groups and suggests ideas a team could test to improve the experience. The sample covers 6,000 accounts, but its original source is unrecorded and it appears simulated. Findings demonstrate the analysis method, not proven results for a real store.",
     "tags": [
       {
         "name": "MySQL",
@@ -243,12 +242,11 @@ const projects = [
     "source_code_link": "https://github.com/omkark2404/ecommerce-funnel-analytics",
     "live_demo_link": null,
     "features": [
-      "Measure unique-user stage and cumulative conversion.",
-      "Identify observed funnel drop-off.",
-      "Compare cohorts with complete follow-up windows.",
-      "Report funnel figures with 95% confidence intervals and chi-square segment tests.",
-      "Cross-check every MySQL query against the pandas result.",
-      "Regenerate CSV outputs and a static dashboard."
+      "Measure how many accounts reach each shopping stage.",
+      "Find the stages with the largest drop-offs.",
+      "Compare customer groups and purchase timing.",
+      "Check that SQL and Python produce matching results.",
+      "Suggest improvements that would need testing."
     ]
   }
 ];
@@ -269,7 +267,7 @@ export const projectExtras = {
     date: "AUG 2026",
     color: "#dbe9f5",
     intro:
-      "Explore cloud spend, investigate anomaly flags and compare forecasts with simple baselines. A prototype for testing cloud-cost decisions; realised savings are not established.",
+      "Understand cloud spending, spot unusual charges and explore future costs with Python and SQL.",
     note: "The six-day forecast WAPE was 80.1% and MAE didn't beat the naive baseline. Predictive quality is unproven — saying so matters more than a good-looking chart.",
     caption: "the real FinOps dashboard (synthetic test data)",
   },
@@ -277,7 +275,7 @@ export const projectExtras = {
     date: "AUG 2026",
     color: "#f2dfd6",
     intro:
-      "A decision prototype that scores delivery-route risk and resequences stops — built on a real 13-route sample plus a synthetic fixture.",
+      "Help delivery teams review route risks and compare stop orders using machine learning.",
     note: "Synthetic planned-vs-actual data can show the method, but it can't prove real-world accuracy. The demo says so on the screen.",
     caption: "the real Pathfinder demo — Operations Control Tower",
   },
@@ -285,7 +283,7 @@ export const projectExtras = {
     date: "JUL 2026",
     color: "#f4e9c6",
     intro:
-      "A document-processing prototype that extracts fields with OCR and flags anomalies for a human reviewer to check.",
+      "Read information from documents with OCR and highlight details that need a human check.",
     note: "A heuristic flag is a question for a reviewer, not proof of fraud. That distinction is the whole point of the tool.",
     caption: "the real FraudLens demo — upload a document",
   },
@@ -293,7 +291,7 @@ export const projectExtras = {
     date: "SEP 2026",
     color: "#dceadd",
     intro:
-      "A collaborative coding platform with shared editing, voice chat and code execution — hosted under the name CodeSync.",
+      "Edit code, run programs and communicate with teammates in one browser workspace.",
     note: "Real-time editing is easy to demo and hard to get right — last-write-wins still has concurrent-edit limits, and the README keeps the original authorship note.",
     caption: "the real CodeSync demo — start a room",
   },
@@ -301,7 +299,7 @@ export const projectExtras = {
     date: "SEP 2026",
     color: "#e6e0f1",
     intro:
-      "A MySQL + Python funnel study of 6,000 accounts that finds where users drop off — on data whose origin is unrecorded.",
+      "Use SQL and Python to find where users drop off and suggest what a team should test next.",
     note: "The biggest loss was 1,743 accounts between product view and add to cart — but the dataset's source is unrecorded, so the recommendation is a hypothesis to test, not a proven fix.",
     caption: "the real funnel dashboard (6,000 accounts)",
   },
