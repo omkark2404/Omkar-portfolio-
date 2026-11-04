@@ -485,3 +485,10 @@ section[id] { scroll-margin-top: 76px; }
   .case-hero { grid-template-columns:1fr; gap:20px; }
   .case-heading h1 { margin-bottom:0; }
 }
+
+/* Centre the project introduction in a single column. */
+.case-hero { grid-template-columns:1fr; gap:20px; text-align:center; max-width:1040px; }
+.case-heading h1 { overflow-wrap:normal; margin-bottom:0; }
+.case-hero-description { padding-top:0; }
+.case-lead { max-width:760px; margin-inline:auto; }
+.case-actions, .case-tags { justify-content:center; }
