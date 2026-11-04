@@ -311,37 +311,19 @@ export const projectExtras = {
 // No percentages or proficiency ratings.
 export const skillGroups = [
   {
-    heading: "LANGUAGES & DATA",
-    items: ["Python", "SQL", "MySQL", "PostgreSQL", "SQLite"],
-  },
-  {
-    heading: "AI · ML",
-    items: ["scikit-learn", "OR-Tools", "PaddleOCR", "OpenCV"],
-  },
-  {
-    heading: "WEB & PLATFORMS",
-    items: [
-      "FastAPI",
-      "Flask",
-      "React",
-      "Next.js",
-      "Socket.IO",
-      "WebRTC",
-      "Monaco",
-      "Docker",
-      "Git",
-      "GitHub",
-    ],
-  },
-  {
     heading: "BUSINESS ANALYSIS",
-    items: [
-      "Requirements gathering",
-      "Process improvement",
-      "Stakeholder management",
-      "Power BI",
-      "Excel",
-      "SAP",
-    ],
+    items: ["Requirements gathering", "Stakeholder communication", "Process improvement", "KPI reporting", "Data visualisation", "Power BI", "Excel", "SAP"],
+  },
+  {
+    heading: "AI/ML",
+    items: ["Machine learning", "scikit-learn", "Model evaluation", "Time-series forecasting", "Anomaly detection", "OCR", "PaddleOCR", "OpenCV", "OR-Tools"],
+  },
+  {
+    heading: "LANGUAGES & DATA",
+    items: ["Python", "SQL", "pandas", "SciPy", "Data cleaning & validation", "Funnel analysis", "Statistical analysis", "MySQL", "PostgreSQL", "SQLite"],
+  },
+  {
+    heading: "DEVELOPMENT & TOOLS",
+    items: ["FastAPI", "Flask", "REST APIs", "React", "Next.js", "Socket.IO", "WebRTC", "Monaco", "Docker", "Git", "GitHub"],
   },
 ];
