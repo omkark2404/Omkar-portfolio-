@@ -430,3 +430,7 @@ section[id] { scroll-margin-top: 76px; }
 #about p, #experience li, .project-content p { text-wrap: pretty; }
 @media (max-width: 760px) { .hero-role-summary { font-size: 13px; margin-top: 28px; } }
 .hero-pill, .hero-availability, .hero-button, .project-folder-tab { font-family: ui-monospace, 'Courier New', monospace; }
+
+/* Emphasise both availability lines. */
+.hero-availability p { font-weight: 900; }
+.hero-availability p + p { color: #161513; }
