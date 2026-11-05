@@ -395,7 +395,7 @@
       "name": "Ecommerce Funnel Analytics",
       "slug": "ecommerce",
       "repo": "ecommerce-funnel-analytics",
-      "description": "An account-level ecommerce funnel analysis using MySQL and reproducible Python-built charts. It covers 6,000 accounts and 19,591 events (Jan-Jul 2023) across signup -> login -> product view -> add to cart -> purchase: 1,298 accounts (21.6%) reached purchase, 50.4% of accounts that added to cart completed purchase, and the largest absolute loss - 1,743 accounts - was between product view and add to cart. Median time to first purchase was 3 days. The dataset's original source is unrecorded and its structure suggests a simulated sample, so results demonstrate the method, not a real store. Recommendations are hypotheses to test, not demonstrated improvements.",
+      "description": "An account-level ecommerce funnel analysis using MySQL and reproducible Python-built charts. It covers 6,000 accounts and 19,822 events (Jan-Jul 2023) across signup -> login -> product view -> add to cart -> purchase: 1,275 accounts (21.25%) reached purchase, 50.2% of accounts that added to cart completed purchase, and the largest absolute loss - 1,715 accounts - was between product view and add to cart. Median time to first purchase was 4 days. The data is deterministic synthetic data (seed 42, CC0 1.0), so results demonstrate the method, not a real store. Recommendations are hypotheses to test, not demonstrated improvements.",
       "tech": [
         "MySQL",
         "Python",
