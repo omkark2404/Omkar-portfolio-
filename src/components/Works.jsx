@@ -5,29 +5,6 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { projectExtras, projects, projectCovers } from "../constants";
 import Reveal from "./Reveal";
 
-// Demo videos for the three projects that have one — played from the
-// portfolio's own assets so they work without leaving the page. The
-// Ecommerce video was rebuilt from the repo's current synthetic data
-// (seed 42); the Pathfinder and CodeFusion cuts are the 35s LinkedIn
-// versions. FinOps Copilot and FraudLens-AI have no video.
-const projectVideos = {
-  Pathfinder: {
-    src: "/assets/videos/pathfinder-35s.mp4",
-    caption: "watch the demo — 35s",
-    portrait: false,
-  },
-  CodeFusion: {
-    src: "/assets/videos/codefusion-35s.mp4",
-    caption: "watch the demo — 35s",
-    portrait: true,
-  },
-  "Ecommerce Funnel Analytics": {
-    src: "/assets/videos/ecommerce-40s.mp4",
-    caption: "watch the walkthrough — 40s",
-    portrait: false,
-  },
-};
-
 const ProjectBlock = ({ project, index, dimmed }) => {
   const extra = projectExtras[project.name] || {};
   const number = String(index + 1).padStart(2, "0");
@@ -99,47 +76,20 @@ const ProjectBlock = ({ project, index, dimmed }) => {
           </div>
         </div>
 
-        {/* Real screenshot as a taped polaroid, plus the demo video where one exists */}
-        <div className="flex w-full max-w-md shrink-0 flex-col gap-8 self-center">
-          <figure
-            className="polaroid relative w-full"
-            style={{ transform: `rotate(${index % 2 === 0 ? -2 : 2}deg)` }}
-          >
-            <span
-              className="tape"
-              style={{ top: "-14px", left: "50%", marginLeft: "-55px" }}
-            />
-            <a href={`?project=${encodeURIComponent(project.name)}`} target="_blank" rel="noopener noreferrer" aria-label={`Read about ${project.name} (opens in a new tab)`} className="block focus-visible:outline focus-visible:outline-4 focus-visible:outline-blue-600">
-            <img src={projectCovers[project.name] || project.image} alt={`${project.name} — illustrative LinkedIn project cover`} loading="lazy" />
-            </a>
-            <figcaption>{project.name} · illustrative project cover</figcaption>
-          </figure>
-          {projectVideos[project.name] && (
-            <figure
-              className="polaroid relative w-full"
-              style={{ transform: `rotate(${index % 2 === 0 ? 2 : -2}deg)` }}
-            >
-              <span
-                className="tape"
-                style={{ top: "-14px", left: "50%", marginLeft: "-55px" }}
-              />
-              <video
-                src={projectVideos[project.name].src}
-                poster={projectCovers[project.name] || project.image}
-                controls
-                preload="metadata"
-                playsInline
-                aria-label={`${project.name} demo video`}
-                style={
-                  projectVideos[project.name].portrait
-                    ? { display: "block", width: "auto", maxHeight: "420px", margin: "0 auto", border: "2px solid #161513", background: "#000" }
-                    : { display: "block", width: "100%", height: "auto", border: "2px solid #161513", background: "#000" }
-                }
-              />
-              <figcaption>{projectVideos[project.name].caption}</figcaption>
-            </figure>
-          )}
-        </div>
+        {/* Real screenshot as a taped polaroid */}
+        <figure
+          className="polaroid relative w-full max-w-md shrink-0 self-center"
+          style={{ transform: `rotate(${index % 2 === 0 ? -2 : 2}deg)` }}
+        >
+          <span
+            className="tape"
+            style={{ top: "-14px", left: "50%", marginLeft: "-55px" }}
+          />
+          <a href={`?project=${encodeURIComponent(project.name)}`} target="_blank" rel="noopener noreferrer" aria-label={`Read about ${project.name} (opens in a new tab)`} className="block focus-visible:outline focus-visible:outline-4 focus-visible:outline-blue-600">
+          <img src={projectCovers[project.name] || project.image} alt={`${project.name} — illustrative LinkedIn project cover`} loading="lazy" />
+          </a>
+          <figcaption>{project.name} · illustrative project cover</figcaption>
+        </figure>
       </motion.div>
     </article>
   );
