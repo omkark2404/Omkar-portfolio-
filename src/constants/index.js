@@ -211,7 +211,7 @@ const projects = [
   },
   {
     "name": "Ecommerce Funnel Analytics",
-    "description": "An ecommerce analysis project that uses MySQL and Python to understand where users leave the journey from signup to purchase. It compares customer groups and suggests ideas a team could test to improve the experience. The sample covers 6,000 accounts, but its original source is unrecorded and it appears simulated. Findings demonstrate the analysis method, not proven results for a real store.",
+    "description": "An ecommerce analysis project that uses MySQL and Python to understand where users leave the journey from signup to purchase. It compares customer groups and suggests ideas a team could test to improve the experience. The sample covers 6,000 accounts, but the data is deterministic synthetic data (seed 42, CC0 1.0). Findings demonstrate the analysis method, not proven results for a real store.",
     "tags": [
       {
         "name": "MySQL",
@@ -300,7 +300,7 @@ export const projectExtras = {
     color: "#e6e0f1",
     intro:
       "Use SQL and Python to find where users drop off and suggest what a team should test next.",
-    note: "The biggest loss was 1,743 accounts between product view and add to cart — but the dataset's source is unrecorded, so the recommendation is a hypothesis to test, not a proven fix.",
+    note: "The biggest loss was 1,715 accounts between product view and add to cart — but the data is synthetic, so the recommendation is a hypothesis to test, not a proven fix.",
     caption: "the real funnel dashboard (6,000 accounts)",
   },
 };
