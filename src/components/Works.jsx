@@ -15,15 +15,14 @@ const ProjectBlock = ({ project, index, dimmed }) => {
       className="project-block"
       style={{ "--project-color": bg, "--project-index": index, zIndex: index + 1 }}
     >
-      <div className={index === 0 ? "project-folder-tab project-folder-tab-first" : "project-folder-tab"}><span aria-hidden="true">✦</span> <span className="project-tab-word">PROJECT</span> {number}</div>
+      <div className="project-folder-tab"><span aria-hidden="true">✦</span> PROJECT {number}</div>
       <div className="project-folder-surface" aria-hidden="true" />
 
       <motion.div
         animate={{
-          scale: dimmed ? 0.97 : 1,
           opacity: dimmed ? 0.85 : 1,
         }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
         className="project-content relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-center gap-8 px-4 py-24 sm:px-8 lg:flex-row lg:items-center lg:gap-12"
       >
         <div className="max-w-2xl">
@@ -102,8 +101,12 @@ const Works = () => {
   // (useScroll can't drive this: a pinned sticky block's rect never moves.)
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // Scroll handler is rAF-throttled: reading every block's rect on every
+  // scroll event forces layout each time and janks scrolling on Android.
   useEffect(() => {
-    const onScroll = () => {
+    let raf = 0;
+    const update = () => {
+      raf = 0;
       const blocks = document.querySelectorAll(".project-block");
       let current = 0;
       blocks.forEach((b, i) => {
@@ -111,9 +114,15 @@ const Works = () => {
       });
       setActiveIndex(current);
     };
-    onScroll();
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(update);
+    };
+    update();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (raf) cancelAnimationFrame(raf);
+    };
   }, []);
 
   return (
@@ -135,6 +144,29 @@ const Works = () => {
       </div>
 
       <div>
+        {/* Mobile-only tab strip: one sticky element holding all five tabs, so
+            they unpin as a unit and the tab row never separates (project 5's
+            tab used to rise above the line when its taller block unpinned
+            first). Per-block tabs are hidden on mobile; the strip is hidden
+            on desktop. Labels mirror the old mobile deck. */}
+        <div className="project-tabs-strip" aria-hidden="true">
+          {projects.map((project, index) => {
+            const extra = projectExtras[project.name] || {};
+            return (
+              <div
+                key={project.name}
+                className="project-deck-tab"
+                style={{ "--project-color": extra.color || "#f6f1e3", "--project-index": index }}
+              >
+                {index === 0 ? (
+                  <>PROJECT {index + 1}</>
+                ) : (
+                  <><span aria-hidden="true">✦</span> {index + 1}</>
+                )}
+              </div>
+            );
+          })}
+        </div>
         {projects.map((project, index) => (
           <ProjectBlock
             key={project.name}
