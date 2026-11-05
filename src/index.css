@@ -407,11 +407,14 @@ section[id] { scroll-margin-top: 76px; }
   .project-block { margin-top: 24px; }
   .project-block .project-content { padding-top: 40px; padding-bottom: 48px; }
 }
-/* Mobile folder tabs: the base tab rule sits above, so this width-only block
-   must come after it to win. All five tabs show the full "✦ PROJECT 1" label,
-   shrunk to fit 390px (and 360px) in one row. */
+/* Mobile folder tabs: deck-style overlap like a fanned stack of folder tabs.
+   First tab shows the full "PROJECT 1"; the rest show "✦ 2".."✦ 5". The base
+   tab rule sits above, so this width-only block must come after it to win. */
 @media (max-width: 760px) {
-  .project-folder-tab { left: calc(16px + var(--project-index) * 64px); width: 78px; gap: 3px; font-size: 9px; letter-spacing: 0; clip-path: polygon(8% 0, 92% 0, 100% 100%, 0 100%); }
+  .project-folder-tab { left: calc(12px + var(--project-index) * 62px); width: 90px; justify-content: flex-start; padding-left: 10px; gap: 4px; font-size: 9px; letter-spacing: 0; clip-path: polygon(16% 0, 84% 0, 100% 100%, 0 100%); }
+  .project-folder-tab .project-tab-word { display: none; }
+  .project-folder-tab-first .project-tab-word { display: inline; }
+  .project-folder-tab-first > span:first-child { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   .project-block { position: relative; top: auto; }

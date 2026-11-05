@@ -15,7 +15,7 @@ const ProjectBlock = ({ project, index, dimmed }) => {
       className="project-block"
       style={{ "--project-color": bg, "--project-index": index, zIndex: index + 1 }}
     >
-      <div className="project-folder-tab"><span aria-hidden="true">✦</span> <span className="project-tab-word">PROJECT</span> {number}</div>
+      <div className={index === 0 ? "project-folder-tab project-folder-tab-first" : "project-folder-tab"}><span aria-hidden="true">✦</span> <span className="project-tab-word">PROJECT</span> {number}</div>
       <div className="project-folder-surface" aria-hidden="true" />
 
       <motion.div
