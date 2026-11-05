@@ -322,7 +322,7 @@ section[id] { scroll-margin-top: 76px; }
   .hero-role-right .hero-role-arrow { left: -18px; }
   .hero-availability { margin-top: 25px; font-size: 9px; letter-spacing: .65px; }
   .hero-availability p + p { font-size: 8px; }
-  .hero-statement-wrap { margin-top: 28px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0 28px; }
+  .hero-statement-wrap { margin-top: 28px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0 48px; }
   .hero-statement { max-width: 100%; font-size: clamp(24px, 5.7vw, 40px); letter-spacing: -1px; flex: 1 1 100%; order: 2; }
   .hero-photo { position: static; display: inline-block; width: 58px; height: 58px; border-width: 3px; margin-bottom: 18px; }
   .hero-photo-left, .hero-photo-right { order: 1; }
