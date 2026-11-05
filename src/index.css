@@ -407,15 +407,14 @@ section[id] { scroll-margin-top: 76px; }
   .project-block { margin-top: 24px; }
   .project-block .project-content { padding-top: 40px; padding-bottom: 48px; }
 }
-/* Mobile project tabs live in a single sticky strip (see Works.jsx), so the
-   five tabs unpin as one unit and the tab row never separates. Per-block tabs
-   are hidden on mobile; the strip is hidden on desktop. The base tab rule
-   sits above, so this width-only block must come after it to win. */
-.project-tabs-strip { display: none; }
+/* Mobile folder tabs: deck-style overlap like a fanned stack of folder tabs.
+   First tab shows the full "PROJECT 1"; the rest show "✦ 2".."✦ 5". The base
+   tab rule sits above, so this width-only block must come after it to win. */
 @media (max-width: 760px) {
-  .project-folder-tab { display: none; }
-  .project-tabs-strip { display: block; position: sticky; top: 80px; z-index: 60; height: 38px; pointer-events: none; }
-  .project-deck-tab { position: absolute; top: 0; left: calc(12px + var(--project-index) * 62px); width: 90px; height: 38px; display: flex; align-items: center; gap: 4px; padding-left: 10px; background: var(--project-color); clip-path: polygon(16% 0, 84% 0, 100% 100%, 0 100%); font-size: 9px; font-weight: 700; letter-spacing: 0; font-family: ui-monospace, 'Courier New', monospace; }
+  .project-folder-tab { left: calc(12px + var(--project-index) * 62px); width: 90px; justify-content: flex-start; padding-left: 10px; gap: 4px; font-size: 9px; letter-spacing: 0; clip-path: polygon(16% 0, 84% 0, 100% 100%, 0 100%); }
+  .project-folder-tab .project-tab-word { display: none; }
+  .project-folder-tab-first .project-tab-word { display: inline; }
+  .project-folder-tab-first > span:first-child { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   .project-block { position: relative; top: auto; }

@@ -15,7 +15,7 @@ const ProjectBlock = ({ project, index, dimmed }) => {
       className="project-block"
       style={{ "--project-color": bg, "--project-index": index, zIndex: index + 1 }}
     >
-      <div className="project-folder-tab"><span aria-hidden="true">✦</span> PROJECT {number}</div>
+      <div className={index === 0 ? "project-folder-tab project-folder-tab-first" : "project-folder-tab"}><span aria-hidden="true">✦</span> <span className="project-tab-word">PROJECT</span> {number}</div>
       <div className="project-folder-surface" aria-hidden="true" />
 
       <motion.div
@@ -152,29 +152,6 @@ const Works = () => {
       </div>
 
       <div>
-        {/* Mobile-only tab strip: one sticky element holding all five tabs, so
-            they unpin as a unit and the tab row never separates (project 5's
-            tab used to rise above the line when its taller block unpinned
-            first). Per-block tabs are hidden on mobile; the strip is hidden
-            on desktop. Labels mirror the old mobile deck. */}
-        <div className="project-tabs-strip" aria-hidden="true">
-          {projects.map((project, index) => {
-            const extra = projectExtras[project.name] || {};
-            return (
-              <div
-                key={project.name}
-                className="project-deck-tab"
-                style={{ "--project-color": extra.color || "#f6f1e3", "--project-index": index }}
-              >
-                {index === 0 ? (
-                  <>PROJECT {index + 1}</>
-                ) : (
-                  <><span aria-hidden="true">✦</span> {index + 1}</>
-                )}
-              </div>
-            );
-          })}
-        </div>
         {projects.map((project, index) => (
           <ProjectBlock
             key={project.name}
