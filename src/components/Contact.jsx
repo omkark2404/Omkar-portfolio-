@@ -1,5 +1,5 @@
 import React from "react";
-import { FaArrowUp, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaArrowUp, FaEnvelope, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import { GITHUB_URL, LINKEDIN_URL } from "../constants";
 import Reveal from "./Reveal";
@@ -53,6 +53,12 @@ const Contact = () => {
             className="flex items-center gap-2 rounded-full border-2 border-ink bg-ink px-5 py-2.5 font-mono text-[13px] font-bold tracking-widest text-white shadow-hard-sm transition-transform hover:-translate-y-0.5 active:translate-y-0 active:shadow-none"
           >
             <FaGithub size={15} /> GITHUB
+          </a>
+          <a
+            href="mailto:okumar1_be23@gmail.com"
+            className="flex items-center gap-2 rounded-full border-2 border-ink bg-white px-5 py-2.5 font-mono text-[13px] font-bold text-ink shadow-hard-sm transition-transform hover:-translate-y-0.5 active:translate-y-0 active:shadow-none"
+          >
+            <FaEnvelope size={15} /> okumar1_be23@gmail.com
           </a>
         </div>
         </div>
