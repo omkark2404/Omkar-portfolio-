@@ -408,10 +408,10 @@ section[id] { scroll-margin-top: 76px; }
   .project-block .project-content { padding-top: 40px; padding-bottom: 48px; }
 }
 /* Mobile folder tabs: the base tab rule sits above, so this width-only block
-   must come after it to win. Five mini tabs ("✦ 01".."✦ 05") fan across 390px. */
+   must come after it to win. All five tabs show the full "✦ PROJECT 1" label,
+   shrunk to fit 390px (and 360px) in one row. */
 @media (max-width: 760px) {
-  .project-folder-tab { left: calc(16px + var(--project-index) * 62px); width: 68px; gap: 4px; }
-  .project-folder-tab .project-tab-word { display: none; }
+  .project-folder-tab { left: calc(16px + var(--project-index) * 64px); width: 78px; gap: 3px; font-size: 9px; letter-spacing: 0; clip-path: polygon(8% 0, 92% 0, 100% 100%, 0 100%); }
 }
 @media (prefers-reduced-motion: reduce) {
   .project-block { position: relative; top: auto; }

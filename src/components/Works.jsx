@@ -7,7 +7,7 @@ import Reveal from "./Reveal";
 
 const ProjectBlock = ({ project, index, dimmed }) => {
   const extra = projectExtras[project.name] || {};
-  const number = String(index + 1).padStart(2, "0");
+  const number = String(index + 1);
   const bg = extra.color || "#f6f1e3";
 
   return (
@@ -174,7 +174,7 @@ const Works = () => {
                     {extra.note || project.description}
                   </p>
                   <footer className="mt-4 font-mono text-[12px] font-bold tracking-widest text-ink/60">
-                    PROJECT {String(index + 1).padStart(2, "0")} ·{" "}
+                    PROJECT {index + 1} ·{" "}
                     {project.name.toUpperCase()}
                   </footer>
                 </blockquote>
