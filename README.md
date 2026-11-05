@@ -35,7 +35,7 @@ shown on the site itself: FinOps forecast quality is unproven (six-day WAPE
 80.1%, naive baseline won); Pathfinder mixes a real 13-route sample with a
 synthetic fixture; FraudLens flags support review, they do not prove fraud;
 CodeFusion's inherited attribution is retained and individual contributions
-need clarification; the ecommerce dataset's original source is unrecorded, so
+need clarification; the ecommerce data is deterministic synthetic data (seed 42), so
 its recommendations are hypotheses to test. Project card dates are the GitHub
 repository creation months. Screenshots on project cards are real captures of
 the live demos / repo dashboards (2026-11-03), shown as taped polaroids.
