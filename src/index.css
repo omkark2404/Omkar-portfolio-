@@ -322,14 +322,12 @@ section[id] { scroll-margin-top: 76px; }
   .hero-role-right .hero-role-arrow { left: -18px; }
   .hero-availability { margin-top: 25px; font-size: 9px; letter-spacing: .65px; }
   .hero-availability p + p { font-size: 8px; }
-  .hero-statement-wrap { margin-top: 28px; }
-  .hero-statement { max-width: 100%; font-size: clamp(24px, 5.7vw, 40px); letter-spacing: -1px; }
+  .hero-statement-wrap { margin-top: 28px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0 14px; }
+  .hero-statement { max-width: 100%; font-size: clamp(24px, 5.7vw, 40px); letter-spacing: -1px; flex: 1 1 100%; order: 2; }
   .hero-photo { position: static; display: inline-block; width: 58px; height: 58px; border-width: 3px; margin-bottom: 18px; }
-  .hero-photo-right { display: none; }
+  .hero-photo-left, .hero-photo-right { order: 1; }
   .hero-actions { margin-top: 25px; gap: 10px; }
   .hero-button { font-size: 10px; padding-right: 12px; gap: 8px; }
-  .project-block { position: relative; min-height: auto; }
-  .project-block > div { min-height: auto; }
 }
 @media (max-width: 360px) {
   .hero-name { width: 270px; font-size: 94px; }
@@ -406,9 +404,9 @@ section[id] { scroll-margin-top: 76px; }
   transform-origin: center top;
 }
 @media (max-width: 760px), (max-height: 650px) {
-  .project-block { position: relative; top: auto; min-height: auto; margin-top: 24px; }
+  .project-block { margin-top: 24px; }
   .project-folder-tab { left: 16px; }
-  .project-block .project-content { min-height: auto; padding-top: 40px; padding-bottom: 48px; opacity: 1 !important; transform: none !important; }
+  .project-block .project-content { padding-top: 40px; padding-bottom: 48px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .project-block { position: relative; top: auto; }
