@@ -30,7 +30,15 @@ const ProjectBlock = ({ project, index, dimmed }) => {
             PROJECT {number} · {extra.date || ""}
           </p>
           <h3 className="mt-3 font-pixel text-[clamp(1.9rem,6vw,4rem)] font-bold leading-[1.05] text-ink">
-            {project.name}
+            <a
+              href={`?project=${encodeURIComponent(project.name)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Read about ${project.name} (opens in a new tab)`}
+              className="text-inherit hover:underline focus-visible:outline focus-visible:outline-4 focus-visible:outline-blue-600"
+            >
+              {project.name}
+            </a>
           </h3>
           <p className="mt-5 max-w-xl text-[15px] leading-7 text-ink/90 sm:text-base">
             {extra.intro || project.description}
