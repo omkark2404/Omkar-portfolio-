@@ -43,7 +43,7 @@ const Footer = () => {
           © 2026 Omkar Kumar
         </p>
         <p className="mt-1 font-hand text-xl font-bold text-ink/60">
-          scrapbook design inspired by jayant.codes — every word and project
+          scrapbook design inspired by omkar — every word and project
           here is my own.
         </p>
       </Reveal>
